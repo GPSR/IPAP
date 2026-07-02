@@ -1,0 +1,6 @@
+node_modules/
+frontend/node_modules/
+frontend/dist/
+db/election_data.sqlite
+*.log
+.DS_Store
