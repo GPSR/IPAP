@@ -7,7 +7,7 @@ CREATE TABLE admin_units (
     id              SERIAL PRIMARY KEY,
     parent_id       INTEGER REFERENCES admin_units(id),
     level           VARCHAR(20) NOT NULL CHECK (level IN
-                        ('STATE','PC','AC','MANDAL','VILLAGE','BOOTH')),
+                        ('STATE','DISTRICT','PC','AC','MANDAL','VILLAGE','BOOTH')),
     name            VARCHAR(200) NOT NULL,
     code            VARCHAR(50),          -- ECI/Census code where available
     reservation     VARCHAR(10),          -- NULL, 'SC', 'ST' (AC level)

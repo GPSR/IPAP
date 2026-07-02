@@ -1,0 +1,1227 @@
+[
+ {
+  "no": 1,
+  "name": "Ichchapuram",
+  "district": "Srikakulam",
+  "ls": "Srikakulam",
+  "reservation": null
+ },
+ {
+  "no": 2,
+  "name": "Palasa",
+  "district": "Srikakulam",
+  "ls": "Srikakulam",
+  "reservation": null
+ },
+ {
+  "no": 3,
+  "name": "Tekkali",
+  "district": "Srikakulam",
+  "ls": "Srikakulam",
+  "reservation": null
+ },
+ {
+  "no": 4,
+  "name": "Pathapatnam",
+  "district": "Srikakulam",
+  "ls": "Srikakulam",
+  "reservation": null
+ },
+ {
+  "no": 5,
+  "name": "Srikakulam",
+  "district": "Srikakulam",
+  "ls": "Srikakulam",
+  "reservation": null
+ },
+ {
+  "no": 6,
+  "name": "Amadalavalasa",
+  "district": "Srikakulam",
+  "ls": "Srikakulam",
+  "reservation": null
+ },
+ {
+  "no": 7,
+  "name": "Etcherla",
+  "district": "Srikakulam",
+  "ls": "Vizianagaram",
+  "reservation": null
+ },
+ {
+  "no": 8,
+  "name": "Narasannapeta",
+  "district": "Srikakulam",
+  "ls": "Srikakulam",
+  "reservation": null
+ },
+ {
+  "no": 9,
+  "name": "Rajam",
+  "district": "Vizianagaram",
+  "ls": "Vizianagaram",
+  "reservation": "SC"
+ },
+ {
+  "no": 10,
+  "name": "Palakonda",
+  "district": "Parvathipuram Manyam",
+  "ls": "Araku",
+  "reservation": "ST"
+ },
+ {
+  "no": 11,
+  "name": "Kurupam",
+  "district": "Parvathipuram Manyam",
+  "ls": "Araku",
+  "reservation": "ST"
+ },
+ {
+  "no": 12,
+  "name": "Parvathipuram",
+  "district": "Parvathipuram Manyam",
+  "ls": "Araku",
+  "reservation": "SC"
+ },
+ {
+  "no": 13,
+  "name": "Salur",
+  "district": "Parvathipuram Manyam",
+  "ls": "Araku",
+  "reservation": "ST"
+ },
+ {
+  "no": 14,
+  "name": "Bobbili",
+  "district": "Vizianagaram",
+  "ls": "Vizianagaram",
+  "reservation": null
+ },
+ {
+  "no": 15,
+  "name": "Cheepurupalli",
+  "district": "Vizianagaram",
+  "ls": "Vizianagaram",
+  "reservation": null
+ },
+ {
+  "no": 16,
+  "name": "Gajapathinagaram",
+  "district": "Vizianagaram",
+  "ls": "Vizianagaram",
+  "reservation": null
+ },
+ {
+  "no": 17,
+  "name": "Nellimarla",
+  "district": "Vizianagaram",
+  "ls": "Vizianagaram",
+  "reservation": null
+ },
+ {
+  "no": 18,
+  "name": "Vizianagaram",
+  "district": "Vizianagaram",
+  "ls": "Vizianagaram",
+  "reservation": null
+ },
+ {
+  "no": 19,
+  "name": "Srungavarapukota",
+  "district": "Vizianagaram",
+  "ls": "Visakhapatnam",
+  "reservation": null
+ },
+ {
+  "no": 20,
+  "name": "Bhimili",
+  "district": "Visakhapatnam",
+  "ls": "Visakhapatnam",
+  "reservation": null
+ },
+ {
+  "no": 21,
+  "name": "Visakhapatnam East",
+  "district": "Visakhapatnam",
+  "ls": "Visakhapatnam",
+  "reservation": null
+ },
+ {
+  "no": 22,
+  "name": "Visakhapatnam South",
+  "district": "Visakhapatnam",
+  "ls": "Visakhapatnam",
+  "reservation": null
+ },
+ {
+  "no": 23,
+  "name": "Visakhapatnam North",
+  "district": "Visakhapatnam",
+  "ls": "Visakhapatnam",
+  "reservation": null
+ },
+ {
+  "no": 24,
+  "name": "Visakhapatnam West",
+  "district": "Visakhapatnam",
+  "ls": "Visakhapatnam",
+  "reservation": null
+ },
+ {
+  "no": 25,
+  "name": "Gajuwaka",
+  "district": "Visakhapatnam",
+  "ls": "Visakhapatnam",
+  "reservation": null
+ },
+ {
+  "no": 26,
+  "name": "Chodavaram",
+  "district": "Anakapalli",
+  "ls": "Anakapalli",
+  "reservation": null
+ },
+ {
+  "no": 27,
+  "name": "Madugula",
+  "district": "Anakapalli",
+  "ls": "Anakapalli",
+  "reservation": null
+ },
+ {
+  "no": 28,
+  "name": "Araku Valley",
+  "district": "Alluri Sitharama Raju",
+  "ls": "Araku",
+  "reservation": "ST"
+ },
+ {
+  "no": 29,
+  "name": "Paderu",
+  "district": "Alluri Sitharama Raju",
+  "ls": "Araku",
+  "reservation": "ST"
+ },
+ {
+  "no": 30,
+  "name": "Anakapalle",
+  "district": "Anakapalli",
+  "ls": "Anakapalli",
+  "reservation": null
+ },
+ {
+  "no": 31,
+  "name": "Pendurthi",
+  "district": "Anakapalli",
+  "ls": "Anakapalli",
+  "reservation": null
+ },
+ {
+  "no": 32,
+  "name": "Elamanchili",
+  "district": "Anakapalli",
+  "ls": "Anakapalli",
+  "reservation": null
+ },
+ {
+  "no": 33,
+  "name": "Payakaraopet",
+  "district": "Anakapalli",
+  "ls": "Anakapalli",
+  "reservation": "SC"
+ },
+ {
+  "no": 34,
+  "name": "Narsipatnam",
+  "district": "Anakapalli",
+  "ls": "Anakapalli",
+  "reservation": null
+ },
+ {
+  "no": 35,
+  "name": "Tuni",
+  "district": "Kakinada",
+  "ls": "Kakinada",
+  "reservation": null
+ },
+ {
+  "no": 36,
+  "name": "Prathipadu",
+  "district": "Kakinada",
+  "ls": "Kakinada",
+  "reservation": null
+ },
+ {
+  "no": 37,
+  "name": "Pithapuram",
+  "district": "Kakinada",
+  "ls": "Kakinada",
+  "reservation": null
+ },
+ {
+  "no": 38,
+  "name": "Kakinada Rural",
+  "district": "Kakinada",
+  "ls": "Kakinada",
+  "reservation": null
+ },
+ {
+  "no": 39,
+  "name": "Peddapuram",
+  "district": "Kakinada",
+  "ls": "Kakinada",
+  "reservation": null
+ },
+ {
+  "no": 40,
+  "name": "Anaparthy",
+  "district": "East Godavari",
+  "ls": "Rajahmundry",
+  "reservation": null
+ },
+ {
+  "no": 41,
+  "name": "Kakinada City",
+  "district": "Kakinada",
+  "ls": "Kakinada",
+  "reservation": null
+ },
+ {
+  "no": 42,
+  "name": "Ramachandrapuram",
+  "district": "Konaseema",
+  "ls": "Amalapuram",
+  "reservation": null
+ },
+ {
+  "no": 43,
+  "name": "Mummidivaram",
+  "district": "Konaseema",
+  "ls": "Amalapuram",
+  "reservation": null
+ },
+ {
+  "no": 44,
+  "name": "Amalapuram",
+  "district": "Konaseema",
+  "ls": "Amalapuram",
+  "reservation": "SC"
+ },
+ {
+  "no": 45,
+  "name": "Razole",
+  "district": "Konaseema",
+  "ls": "Amalapuram",
+  "reservation": "SC"
+ },
+ {
+  "no": 46,
+  "name": "Gannavaram",
+  "district": "Konaseema",
+  "ls": "Amalapuram",
+  "reservation": "SC"
+ },
+ {
+  "no": 47,
+  "name": "Kothapeta",
+  "district": "Konaseema",
+  "ls": "Amalapuram",
+  "reservation": null
+ },
+ {
+  "no": 48,
+  "name": "Mandapeta",
+  "district": "Konaseema",
+  "ls": "Amalapuram",
+  "reservation": null
+ },
+ {
+  "no": 49,
+  "name": "Rajanagaram",
+  "district": "East Godavari",
+  "ls": "Rajahmundry",
+  "reservation": null
+ },
+ {
+  "no": 50,
+  "name": "Rajahmundry City",
+  "district": "East Godavari",
+  "ls": "Rajahmundry",
+  "reservation": null
+ },
+ {
+  "no": 51,
+  "name": "Rajahmundry Rural",
+  "district": "East Godavari",
+  "ls": "Rajahmundry",
+  "reservation": null
+ },
+ {
+  "no": 52,
+  "name": "Jaggampeta",
+  "district": "Kakinada",
+  "ls": "Kakinada",
+  "reservation": null
+ },
+ {
+  "no": 53,
+  "name": "Rampachodavaram",
+  "district": "Alluri Sitharama Raju",
+  "ls": "Araku",
+  "reservation": "ST"
+ },
+ {
+  "no": 54,
+  "name": "Kovvur",
+  "district": "East Godavari",
+  "ls": "Rajahmundry",
+  "reservation": "SC"
+ },
+ {
+  "no": 55,
+  "name": "Nidadavole",
+  "district": "East Godavari",
+  "ls": "Rajahmundry",
+  "reservation": null
+ },
+ {
+  "no": 56,
+  "name": "Achanta",
+  "district": "West Godavari",
+  "ls": "Narasapuram",
+  "reservation": null
+ },
+ {
+  "no": 57,
+  "name": "Palakollu",
+  "district": "West Godavari",
+  "ls": "Narasapuram",
+  "reservation": null
+ },
+ {
+  "no": 58,
+  "name": "Narasapuram",
+  "district": "West Godavari",
+  "ls": "Narasapuram",
+  "reservation": null
+ },
+ {
+  "no": 59,
+  "name": "Bhimavaram",
+  "district": "West Godavari",
+  "ls": "Narasapuram",
+  "reservation": null
+ },
+ {
+  "no": 60,
+  "name": "Undi",
+  "district": "West Godavari",
+  "ls": "Narasapuram",
+  "reservation": null
+ },
+ {
+  "no": 61,
+  "name": "Tanuku",
+  "district": "West Godavari",
+  "ls": "Narasapuram",
+  "reservation": null
+ },
+ {
+  "no": 62,
+  "name": "Tadepalligudem",
+  "district": "West Godavari",
+  "ls": "Narasapuram",
+  "reservation": null
+ },
+ {
+  "no": 63,
+  "name": "Unguturu",
+  "district": "Eluru",
+  "ls": "Eluru",
+  "reservation": null
+ },
+ {
+  "no": 64,
+  "name": "Denduluru",
+  "district": "Eluru",
+  "ls": "Eluru",
+  "reservation": null
+ },
+ {
+  "no": 65,
+  "name": "Eluru",
+  "district": "Eluru",
+  "ls": "Eluru",
+  "reservation": null
+ },
+ {
+  "no": 66,
+  "name": "Gopalapuram",
+  "district": "East Godavari",
+  "ls": "Rajahmundry",
+  "reservation": "SC"
+ },
+ {
+  "no": 67,
+  "name": "Polavaram",
+  "district": "Eluru",
+  "ls": "Eluru",
+  "reservation": "ST"
+ },
+ {
+  "no": 68,
+  "name": "Chintalapudi",
+  "district": "Eluru",
+  "ls": "Eluru",
+  "reservation": "SC"
+ },
+ {
+  "no": 69,
+  "name": "Tiruvuru",
+  "district": "NTR",
+  "ls": "Vijayawada",
+  "reservation": "SC"
+ },
+ {
+  "no": 70,
+  "name": "Nuzvid",
+  "district": "Eluru",
+  "ls": "Eluru",
+  "reservation": null
+ },
+ {
+  "no": 71,
+  "name": "Gannavaram",
+  "district": "Krishna",
+  "ls": "Machilipatnam",
+  "reservation": null
+ },
+ {
+  "no": 72,
+  "name": "Gudivada",
+  "district": "Krishna",
+  "ls": "Machilipatnam",
+  "reservation": null
+ },
+ {
+  "no": 73,
+  "name": "Kaikalur",
+  "district": "Eluru",
+  "ls": "Eluru",
+  "reservation": null
+ },
+ {
+  "no": 74,
+  "name": "Pedana",
+  "district": "Krishna",
+  "ls": "Machilipatnam",
+  "reservation": null
+ },
+ {
+  "no": 75,
+  "name": "Machilipatnam",
+  "district": "Krishna",
+  "ls": "Machilipatnam",
+  "reservation": null
+ },
+ {
+  "no": 76,
+  "name": "Avanigadda",
+  "district": "Krishna",
+  "ls": "Machilipatnam",
+  "reservation": null
+ },
+ {
+  "no": 77,
+  "name": "Pamarru",
+  "district": "Krishna",
+  "ls": "Machilipatnam",
+  "reservation": "SC"
+ },
+ {
+  "no": 78,
+  "name": "Penamaluru",
+  "district": "Krishna",
+  "ls": "Machilipatnam",
+  "reservation": null
+ },
+ {
+  "no": 79,
+  "name": "Vijayawada West",
+  "district": "NTR",
+  "ls": "Vijayawada",
+  "reservation": null
+ },
+ {
+  "no": 80,
+  "name": "Vijayawada Central",
+  "district": "NTR",
+  "ls": "Vijayawada",
+  "reservation": null
+ },
+ {
+  "no": 81,
+  "name": "Vijayawada East",
+  "district": "NTR",
+  "ls": "Vijayawada",
+  "reservation": null
+ },
+ {
+  "no": 82,
+  "name": "Mylavaram",
+  "district": "NTR",
+  "ls": "Vijayawada",
+  "reservation": null
+ },
+ {
+  "no": 83,
+  "name": "Nandigama",
+  "district": "NTR",
+  "ls": "Vijayawada",
+  "reservation": "SC"
+ },
+ {
+  "no": 84,
+  "name": "Jaggayyapeta",
+  "district": "NTR",
+  "ls": "Vijayawada",
+  "reservation": null
+ },
+ {
+  "no": 85,
+  "name": "Pedakurapadu",
+  "district": "Palnadu",
+  "ls": "Narasaraopet",
+  "reservation": null
+ },
+ {
+  "no": 86,
+  "name": "Tadikonda",
+  "district": "Guntur",
+  "ls": "Guntur",
+  "reservation": "SC"
+ },
+ {
+  "no": 87,
+  "name": "Mangalagiri",
+  "district": "Guntur",
+  "ls": "Guntur",
+  "reservation": null
+ },
+ {
+  "no": 88,
+  "name": "Ponnuru",
+  "district": "Guntur",
+  "ls": "Guntur",
+  "reservation": null
+ },
+ {
+  "no": 89,
+  "name": "Vemuru",
+  "district": "Bapatla",
+  "ls": "Bapatla",
+  "reservation": "SC"
+ },
+ {
+  "no": 90,
+  "name": "Repalle",
+  "district": "Bapatla",
+  "ls": "Bapatla",
+  "reservation": null
+ },
+ {
+  "no": 91,
+  "name": "Tenali",
+  "district": "Guntur",
+  "ls": "Guntur",
+  "reservation": null
+ },
+ {
+  "no": 92,
+  "name": "Bapatla",
+  "district": "Bapatla",
+  "ls": "Bapatla",
+  "reservation": null
+ },
+ {
+  "no": 93,
+  "name": "Prathipadu",
+  "district": "Guntur",
+  "ls": "Guntur",
+  "reservation": "SC"
+ },
+ {
+  "no": 94,
+  "name": "Guntur West",
+  "district": "Guntur",
+  "ls": "Guntur",
+  "reservation": null
+ },
+ {
+  "no": 95,
+  "name": "Guntur East",
+  "district": "Guntur",
+  "ls": "Guntur",
+  "reservation": null
+ },
+ {
+  "no": 96,
+  "name": "Chilakaluripet",
+  "district": "Palnadu",
+  "ls": "Narasaraopet",
+  "reservation": null
+ },
+ {
+  "no": 97,
+  "name": "Narasaraopet",
+  "district": "Palnadu",
+  "ls": "Narasaraopet",
+  "reservation": null
+ },
+ {
+  "no": 98,
+  "name": "Sattenapalle",
+  "district": "Palnadu",
+  "ls": "Narasaraopet",
+  "reservation": null
+ },
+ {
+  "no": 99,
+  "name": "Vinukonda",
+  "district": "Palnadu",
+  "ls": "Narasaraopet",
+  "reservation": null
+ },
+ {
+  "no": 100,
+  "name": "Gurajala",
+  "district": "Palnadu",
+  "ls": "Narasaraopet",
+  "reservation": null
+ },
+ {
+  "no": 101,
+  "name": "Macherla",
+  "district": "Palnadu",
+  "ls": "Narasaraopet",
+  "reservation": null
+ },
+ {
+  "no": 102,
+  "name": "Yerragondapalem",
+  "district": "Prakasam",
+  "ls": "Ongole",
+  "reservation": "SC"
+ },
+ {
+  "no": 103,
+  "name": "Darsi",
+  "district": "Prakasam",
+  "ls": "Ongole",
+  "reservation": null
+ },
+ {
+  "no": 104,
+  "name": "Parchur",
+  "district": "Bapatla",
+  "ls": "Bapatla",
+  "reservation": null
+ },
+ {
+  "no": 105,
+  "name": "Addanki",
+  "district": "Bapatla",
+  "ls": "Bapatla",
+  "reservation": null
+ },
+ {
+  "no": 106,
+  "name": "Chirala",
+  "district": "Bapatla",
+  "ls": "Bapatla",
+  "reservation": null
+ },
+ {
+  "no": 107,
+  "name": "Santhanuthalapadu",
+  "district": "Prakasam",
+  "ls": "Bapatla",
+  "reservation": "SC"
+ },
+ {
+  "no": 108,
+  "name": "Ongole",
+  "district": "Prakasam",
+  "ls": "Ongole",
+  "reservation": null
+ },
+ {
+  "no": 109,
+  "name": "Kandukur",
+  "district": "SPSR Nellore",
+  "ls": "Nellore",
+  "reservation": null
+ },
+ {
+  "no": 110,
+  "name": "Kondapi",
+  "district": "Prakasam",
+  "ls": "Ongole",
+  "reservation": "SC"
+ },
+ {
+  "no": 111,
+  "name": "Markapuram",
+  "district": "Prakasam",
+  "ls": "Ongole",
+  "reservation": null
+ },
+ {
+  "no": 112,
+  "name": "Giddalur",
+  "district": "Prakasam",
+  "ls": "Ongole",
+  "reservation": null
+ },
+ {
+  "no": 113,
+  "name": "Kanigiri",
+  "district": "Prakasam",
+  "ls": "Ongole",
+  "reservation": null
+ },
+ {
+  "no": 114,
+  "name": "Kavali",
+  "district": "SPSR Nellore",
+  "ls": "Nellore",
+  "reservation": null
+ },
+ {
+  "no": 115,
+  "name": "Atmakur",
+  "district": "SPSR Nellore",
+  "ls": "Nellore",
+  "reservation": null
+ },
+ {
+  "no": 116,
+  "name": "Kovur",
+  "district": "SPSR Nellore",
+  "ls": "Nellore",
+  "reservation": null
+ },
+ {
+  "no": 117,
+  "name": "Nellore City",
+  "district": "SPSR Nellore",
+  "ls": "Nellore",
+  "reservation": null
+ },
+ {
+  "no": 118,
+  "name": "Nellore Rural",
+  "district": "SPSR Nellore",
+  "ls": "Nellore",
+  "reservation": null
+ },
+ {
+  "no": 119,
+  "name": "Sarvepalli",
+  "district": "SPSR Nellore",
+  "ls": "Tirupati",
+  "reservation": null
+ },
+ {
+  "no": 120,
+  "name": "Gudur",
+  "district": "Tirupati",
+  "ls": "Tirupati",
+  "reservation": "SC"
+ },
+ {
+  "no": 121,
+  "name": "Sullurpeta",
+  "district": "Tirupati",
+  "ls": "Tirupati",
+  "reservation": "SC"
+ },
+ {
+  "no": 122,
+  "name": "Venkatagiri",
+  "district": "Tirupati",
+  "ls": "Tirupati",
+  "reservation": null
+ },
+ {
+  "no": 123,
+  "name": "Udayagiri",
+  "district": "SPSR Nellore",
+  "ls": "Nellore",
+  "reservation": null
+ },
+ {
+  "no": 124,
+  "name": "Badvel",
+  "district": "YSR Kadapa",
+  "ls": "Kadapa",
+  "reservation": "SC"
+ },
+ {
+  "no": 125,
+  "name": "Rajampet",
+  "district": "Annamayya",
+  "ls": "Rajampet",
+  "reservation": null
+ },
+ {
+  "no": 126,
+  "name": "Kadapa",
+  "district": "YSR Kadapa",
+  "ls": "Kadapa",
+  "reservation": null
+ },
+ {
+  "no": 127,
+  "name": "Kodur",
+  "district": "Annamayya",
+  "ls": "Rajampet",
+  "reservation": "SC"
+ },
+ {
+  "no": 128,
+  "name": "Rayachoti",
+  "district": "Annamayya",
+  "ls": "Rajampet",
+  "reservation": null
+ },
+ {
+  "no": 129,
+  "name": "Pulivendla",
+  "district": "YSR Kadapa",
+  "ls": "Kadapa",
+  "reservation": null
+ },
+ {
+  "no": 130,
+  "name": "Kamalapuram",
+  "district": "YSR Kadapa",
+  "ls": "Kadapa",
+  "reservation": null
+ },
+ {
+  "no": 131,
+  "name": "Jammalamadugu",
+  "district": "YSR Kadapa",
+  "ls": "Kadapa",
+  "reservation": null
+ },
+ {
+  "no": 132,
+  "name": "Proddatur",
+  "district": "YSR Kadapa",
+  "ls": "Kadapa",
+  "reservation": null
+ },
+ {
+  "no": 133,
+  "name": "Mydukur",
+  "district": "YSR Kadapa",
+  "ls": "Kadapa",
+  "reservation": null
+ },
+ {
+  "no": 134,
+  "name": "Allagadda",
+  "district": "Nandyal",
+  "ls": "Nandyal",
+  "reservation": null
+ },
+ {
+  "no": 135,
+  "name": "Srisailam",
+  "district": "Nandyal",
+  "ls": "Nandyal",
+  "reservation": null
+ },
+ {
+  "no": 136,
+  "name": "Nandikotkur",
+  "district": "Nandyal",
+  "ls": "Nandyal",
+  "reservation": "SC"
+ },
+ {
+  "no": 137,
+  "name": "Kurnool",
+  "district": "Kurnool",
+  "ls": "Kurnool",
+  "reservation": null
+ },
+ {
+  "no": 138,
+  "name": "Panyam",
+  "district": "Nandyal",
+  "ls": "Nandyal",
+  "reservation": null
+ },
+ {
+  "no": 139,
+  "name": "Nandyal",
+  "district": "Nandyal",
+  "ls": "Nandyal",
+  "reservation": null
+ },
+ {
+  "no": 140,
+  "name": "Banaganapalle",
+  "district": "Nandyal",
+  "ls": "Nandyal",
+  "reservation": null
+ },
+ {
+  "no": 141,
+  "name": "Dhone",
+  "district": "Nandyal",
+  "ls": "Nandyal",
+  "reservation": null
+ },
+ {
+  "no": 142,
+  "name": "Pattikonda",
+  "district": "Kurnool",
+  "ls": "Kurnool",
+  "reservation": null
+ },
+ {
+  "no": 143,
+  "name": "Kodumur",
+  "district": "Kurnool",
+  "ls": "Kurnool",
+  "reservation": "SC"
+ },
+ {
+  "no": 144,
+  "name": "Yemmiganur",
+  "district": "Kurnool",
+  "ls": "Kurnool",
+  "reservation": null
+ },
+ {
+  "no": 145,
+  "name": "Mantralayam",
+  "district": "Kurnool",
+  "ls": "Kurnool",
+  "reservation": null
+ },
+ {
+  "no": 146,
+  "name": "Adoni",
+  "district": "Kurnool",
+  "ls": "Kurnool",
+  "reservation": null
+ },
+ {
+  "no": 147,
+  "name": "Alur",
+  "district": "Kurnool",
+  "ls": "Kurnool",
+  "reservation": null
+ },
+ {
+  "no": 148,
+  "name": "Rayadurg",
+  "district": "Anantapur",
+  "ls": "Anantapur",
+  "reservation": null
+ },
+ {
+  "no": 149,
+  "name": "Uravakonda",
+  "district": "Anantapur",
+  "ls": "Anantapur",
+  "reservation": null
+ },
+ {
+  "no": 150,
+  "name": "Guntakal",
+  "district": "Anantapur",
+  "ls": "Anantapur",
+  "reservation": null
+ },
+ {
+  "no": 151,
+  "name": "Tadipatri",
+  "district": "Anantapur",
+  "ls": "Anantapur",
+  "reservation": null
+ },
+ {
+  "no": 152,
+  "name": "Singanamala",
+  "district": "Anantapur",
+  "ls": "Anantapur",
+  "reservation": "SC"
+ },
+ {
+  "no": 153,
+  "name": "Anantapur Urban",
+  "district": "Anantapur",
+  "ls": "Anantapur",
+  "reservation": null
+ },
+ {
+  "no": 154,
+  "name": "Kalyandurg",
+  "district": "Anantapur",
+  "ls": "Anantapur",
+  "reservation": null
+ },
+ {
+  "no": 155,
+  "name": "Raptadu",
+  "district": "Anantapur",
+  "ls": "Hindupur",
+  "reservation": null
+ },
+ {
+  "no": 156,
+  "name": "Madakasira",
+  "district": "Sri Sathya Sai",
+  "ls": "Hindupur",
+  "reservation": "SC"
+ },
+ {
+  "no": 157,
+  "name": "Hindupur",
+  "district": "Sri Sathya Sai",
+  "ls": "Hindupur",
+  "reservation": null
+ },
+ {
+  "no": 158,
+  "name": "Penukonda",
+  "district": "Sri Sathya Sai",
+  "ls": "Hindupur",
+  "reservation": null
+ },
+ {
+  "no": 159,
+  "name": "Puttaparthi",
+  "district": "Sri Sathya Sai",
+  "ls": "Hindupur",
+  "reservation": null
+ },
+ {
+  "no": 160,
+  "name": "Dharmavaram",
+  "district": "Sri Sathya Sai",
+  "ls": "Hindupur",
+  "reservation": null
+ },
+ {
+  "no": 161,
+  "name": "Kadiri",
+  "district": "Sri Sathya Sai",
+  "ls": "Hindupur",
+  "reservation": null
+ },
+ {
+  "no": 162,
+  "name": "Thamballapalle",
+  "district": "Annamayya",
+  "ls": "Rajampet",
+  "reservation": null
+ },
+ {
+  "no": 163,
+  "name": "Pileru",
+  "district": "Annamayya",
+  "ls": "Rajampet",
+  "reservation": null
+ },
+ {
+  "no": 164,
+  "name": "Madanapalle",
+  "district": "Annamayya",
+  "ls": "Rajampet",
+  "reservation": null
+ },
+ {
+  "no": 165,
+  "name": "Punganur",
+  "district": "Chittoor",
+  "ls": "Rajampet",
+  "reservation": null
+ },
+ {
+  "no": 166,
+  "name": "Chandragiri",
+  "district": "Tirupati",
+  "ls": "Chittoor",
+  "reservation": null
+ },
+ {
+  "no": 167,
+  "name": "Tirupati",
+  "district": "Tirupati",
+  "ls": "Tirupati",
+  "reservation": null
+ },
+ {
+  "no": 168,
+  "name": "Srikalahasti",
+  "district": "Tirupati",
+  "ls": "Tirupati",
+  "reservation": null
+ },
+ {
+  "no": 169,
+  "name": "Sathyavedu",
+  "district": "Tirupati",
+  "ls": "Tirupati",
+  "reservation": "SC"
+ },
+ {
+  "no": 170,
+  "name": "Nagari",
+  "district": "Chittoor",
+  "ls": "Chittoor",
+  "reservation": null
+ },
+ {
+  "no": 171,
+  "name": "Gangadhara Nellore",
+  "district": "Chittoor",
+  "ls": "Chittoor",
+  "reservation": "SC"
+ },
+ {
+  "no": 172,
+  "name": "Chittoor",
+  "district": "Chittoor",
+  "ls": "Chittoor",
+  "reservation": null
+ },
+ {
+  "no": 173,
+  "name": "Puthalapattu",
+  "district": "Chittoor",
+  "ls": "Chittoor",
+  "reservation": "SC"
+ },
+ {
+  "no": 174,
+  "name": "Palamaner",
+  "district": "Chittoor",
+  "ls": "Chittoor",
+  "reservation": null
+ },
+ {
+  "no": 175,
+  "name": "Kuppam",
+  "district": "Chittoor",
+  "ls": "Chittoor",
+  "reservation": null
+ }
+]
