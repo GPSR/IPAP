@@ -13,4 +13,5 @@ export const api = {
   trend: (unitId) => get(`/api/admin-units/${unitId}/trend`),
   demographics: (unitId) => get(`/api/admin-units/${unitId}/demographics`),
   resolve: (name, level) => get(`/api/admin-units?name=${encodeURIComponent(name)}${level ? `&level=${level}` : ''}`),
+  listByLevel: (level) => get(`/api/admin-units?level=${level}`),
 };

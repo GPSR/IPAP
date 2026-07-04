@@ -17,12 +17,14 @@ const CLASS_COLOR = {
   WEAK: { bg: 'rgba(196,69,61,0.15)', text: '#f09595' }
 };
 
-// Kadapa PC's admin_unit id — resolved once at startup rather than hardcoded,
-// so this still works if the db gets reseeded with different ids.
-const PC_NAME = 'Kadapa';
+// Default landing point — Badvel is where this build started and has full
+// real multi-election data, so it's the most informative first view.
+const DEFAULT_DISTRICT = 'YSR Kadapa';
+const DEFAULT_AC = 'Badvel';
 
 export default function App() {
-  const [pcId, setPcId] = useState(null);
+  const [districts, setDistricts] = useState([]);
+  const [selectedDistrict, setSelectedDistrict] = useState(null);
   const [acs, setAcs] = useState([]);
   const [selectedAc, setSelectedAc] = useState(null);
   const [mandals, setMandals] = useState([]);
@@ -33,22 +35,37 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Resolve the PC and load its AC list on first mount.
+  // Load all 26 districts once, on mount, and default to YSR Kadapa.
   useEffect(() => {
     (async () => {
       try {
-        const pcs = await api.resolve(PC_NAME, 'PC');
-        if (!pcs.length) throw new Error(`PC "${PC_NAME}" not found — did you run the seed script?`);
-        const pc = pcs[0];
-        setPcId(pc.id);
-        const acList = await api.pcAcs(pc.id);
-        setAcs(acList);
-        if (acList.length) setSelectedAc(acList[0]);
+        const districtList = await api.listByLevel('DISTRICT');
+        districtList.sort((a, b) => a.name.localeCompare(b.name));
+        setDistricts(districtList);
+        const defaultDistrict = districtList.find(d => d.name === DEFAULT_DISTRICT) || districtList[0];
+        setSelectedDistrict(defaultDistrict || null);
       } catch (e) {
         setError(e.message);
       }
     })();
   }, []);
+
+  // Load this district's ACs whenever the district selection changes.
+  useEffect(() => {
+    if (!selectedDistrict) return;
+    (async () => {
+      try {
+        const acList = await api.children(selectedDistrict.id);
+        acList.sort((a, b) => Number(a.code) - Number(b.code));
+        setAcs(acList);
+        const defaultAc = acList.find(a => a.name === DEFAULT_AC) || acList[0];
+        setSelectedAc(defaultAc || null);
+        setError(null);
+      } catch (e) {
+        setError(e.message);
+      }
+    })();
+  }, [selectedDistrict]);
 
   // Load everything for the selected AC.
   useEffect(() => {
@@ -107,20 +124,39 @@ export default function App() {
         <div>
           <p className="eyebrow">Election analytics — Andhra Pradesh</p>
           <h1>{selectedAc ? selectedAc.name : '...'} {selectedAc?.reservation ? `(${selectedAc.reservation})` : ''}</h1>
-          <p className="subhead">Kadapa Lok Sabha constituency, Andhra Pradesh — live from Postgres/SQLite via REST API</p>
-        </div>
-        <div className="ac-switch">
-          {acs.map(ac => (
-            <button
-              key={ac.id}
-              className={ac.id === selectedAc?.id ? 'tab tab-active' : 'tab'}
-              onClick={() => setSelectedAc(ac)}
-            >
-              {ac.name}{ac.reservation ? ` (${ac.reservation})` : ''}
-            </button>
-          ))}
+          <p className="subhead">
+            {selectedDistrict?.name} district, Andhra Pradesh — live from Postgres/SQLite via REST API
+          </p>
         </div>
       </header>
+
+      <div className="district-picker">
+        <label htmlFor="district-select">District</label>
+        <select
+          id="district-select"
+          value={selectedDistrict?.id || ''}
+          onChange={e => {
+            const d = districts.find(d => String(d.id) === e.target.value);
+            setSelectedDistrict(d);
+          }}
+        >
+          {districts.map(d => (
+            <option key={d.id} value={d.id}>{d.name}</option>
+          ))}
+        </select>
+      </div>
+
+      <div className="ac-switch">
+        {acs.map(ac => (
+          <button
+            key={ac.id}
+            className={ac.id === selectedAc?.id ? 'tab tab-active' : 'tab'}
+            onClick={() => setSelectedAc(ac)}
+          >
+            {ac.name}{ac.reservation ? ` (${ac.reservation})` : ''}
+          </button>
+        ))}
+      </div>
 
       {loading ? (
         <p className="loading">Loading…</p>
