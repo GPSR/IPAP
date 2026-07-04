@@ -103,7 +103,67 @@ app.get('/api/admin-units/:id/trend', (req, res) => {
   res.json(rows);
 });
 
-// GET /api/admin-units/:id/demographics
+// GET /api/state-summary — statewide seat count by party for the latest
+// election on record, plus how many seats changed party vs. the prior
+// comparable election. Powers the "State" home view.
+app.get('/api/state-summary', (req, res) => {
+  const seatsByParty = all(
+    `SELECT p.abbr AS party, p.color_hex, COUNT(*) AS seats
+     FROM results r
+     JOIN admin_units ac ON ac.id = r.admin_unit_id AND ac.level = 'AC'
+     JOIN elections e ON e.id = r.election_id
+     JOIN parties p ON p.id = r.party_id
+     WHERE e.year = 2024 AND e.is_by_election = 0 AND r.is_winner = 1
+     GROUP BY p.abbr, p.color_hex
+     ORDER BY seats DESC`
+  );
+
+  const flips = all(
+    `SELECT ac.name, ac.code, d.name AS district, p19.abbr AS party_2019, p24.abbr AS party_2024
+     FROM admin_units ac
+     JOIN admin_units d ON d.id = ac.parent_id
+     JOIN results r19 ON r19.admin_unit_id = ac.id AND r19.is_winner = 1
+     JOIN elections e19 ON e19.id = r19.election_id AND e19.year = 2019 AND e19.is_by_election = 0
+     JOIN parties p19 ON p19.id = r19.party_id
+     JOIN results r24 ON r24.admin_unit_id = ac.id AND r24.is_winner = 1
+     JOIN elections e24 ON e24.id = r24.election_id AND e24.year = 2024 AND e24.is_by_election = 0
+     JOIN parties p24 ON p24.id = r24.party_id
+     WHERE ac.level = 'AC' AND p19.abbr != p24.abbr
+     ORDER BY CAST(ac.code AS INTEGER)`
+  );
+
+  const totalAcs = one(`SELECT COUNT(*) AS n FROM admin_units WHERE level = 'AC'`).n;
+  const totalDistricts = one(`SELECT COUNT(*) AS n FROM admin_units WHERE level = 'DISTRICT'`).n;
+
+  res.json({ totalAcs, totalDistricts, seatsByParty, flippedCount: flips.length, flips });
+});
+
+// GET /api/districts/:id/summary — every AC in a district with its most
+// recent (2024) winner + party, in one call instead of N. Powers the
+// "District" home view.
+app.get('/api/districts/:id/summary', (req, res) => {
+  const districtId = req.params.id;
+  const acs = all(
+    `SELECT id, name, code, reservation FROM admin_units WHERE parent_id = ? AND level = 'AC' ORDER BY CAST(code AS INTEGER)`,
+    [districtId]
+  );
+
+  const out = acs.map(ac => {
+    const winner = one(
+      `SELECT c.name AS candidate, p.abbr AS party, r.votes, r.vote_share_pct
+       FROM results r
+       JOIN candidates c ON c.id = r.candidate_id
+       LEFT JOIN parties p ON p.id = r.party_id
+       JOIN elections e ON e.id = r.election_id
+       WHERE r.admin_unit_id = ? AND r.is_winner = 1 AND e.year = 2024 AND e.is_by_election = 0`,
+      [ac.id]
+    );
+    return { ...ac, winner2024: winner || null };
+  });
+
+  res.json(out);
+});
+
 app.get('/api/admin-units/:id/demographics', (req, res) => {
   res.json(all(`SELECT * FROM demographics WHERE admin_unit_id = ?`, [req.params.id]));
 });

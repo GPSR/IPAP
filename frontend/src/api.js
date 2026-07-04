@@ -14,4 +14,6 @@ export const api = {
   demographics: (unitId) => get(`/api/admin-units/${unitId}/demographics`),
   resolve: (name, level) => get(`/api/admin-units?name=${encodeURIComponent(name)}${level ? `&level=${level}` : ''}`),
   listByLevel: (level) => get(`/api/admin-units?level=${level}`),
+  stateSummary: () => get(`/api/state-summary`),
+  districtSummary: (districtId) => get(`/api/districts/${districtId}/summary`),
 };

@@ -112,6 +112,61 @@ app.get('/api/admin-units/:id/trend', async (req, res, next) => {
   } catch (e) { next(e); }
 });
 
+app.get('/api/state-summary', async (req, res, next) => {
+  try {
+    const seatsByParty = await all(
+      `SELECT p.abbr AS party, p.color_hex, COUNT(*) AS seats
+       FROM results r
+       JOIN admin_units ac ON ac.id = r.admin_unit_id AND ac.level = 'AC'
+       JOIN elections e ON e.id = r.election_id
+       JOIN parties p ON p.id = r.party_id
+       WHERE e.year = 2024 AND e.is_by_election = false AND r.is_winner = true
+       GROUP BY p.abbr, p.color_hex
+       ORDER BY seats DESC`
+    );
+    const flips = await all(
+      `SELECT ac.name, ac.code, d.name AS district, p19.abbr AS party_2019, p24.abbr AS party_2024
+       FROM admin_units ac
+       JOIN admin_units d ON d.id = ac.parent_id
+       JOIN results r19 ON r19.admin_unit_id = ac.id AND r19.is_winner = true
+       JOIN elections e19 ON e19.id = r19.election_id AND e19.year = 2019 AND e19.is_by_election = false
+       JOIN parties p19 ON p19.id = r19.party_id
+       JOIN results r24 ON r24.admin_unit_id = ac.id AND r24.is_winner = true
+       JOIN elections e24 ON e24.id = r24.election_id AND e24.year = 2024 AND e24.is_by_election = false
+       JOIN parties p24 ON p24.id = r24.party_id
+       WHERE ac.level = 'AC' AND p19.abbr != p24.abbr
+       ORDER BY CAST(ac.code AS INTEGER)`
+    );
+    const totalAcs = (await one(`SELECT COUNT(*) AS n FROM admin_units WHERE level = 'AC'`)).n;
+    const totalDistricts = (await one(`SELECT COUNT(*) AS n FROM admin_units WHERE level = 'DISTRICT'`)).n;
+    res.json({ totalAcs: Number(totalAcs), totalDistricts: Number(totalDistricts), seatsByParty, flippedCount: flips.length, flips });
+  } catch (e) { next(e); }
+});
+
+app.get('/api/districts/:id/summary', async (req, res, next) => {
+  try {
+    const districtId = req.params.id;
+    const acs = await all(
+      `SELECT id, name, code, reservation FROM admin_units WHERE parent_id = $1 AND level = 'AC' ORDER BY CAST(code AS INTEGER)`,
+      [districtId]
+    );
+    const out = [];
+    for (const ac of acs) {
+      const winner = await one(
+        `SELECT c.name AS candidate, p.abbr AS party, r.votes, r.vote_share_pct
+         FROM results r
+         JOIN candidates c ON c.id = r.candidate_id
+         LEFT JOIN parties p ON p.id = r.party_id
+         JOIN elections e ON e.id = r.election_id
+         WHERE r.admin_unit_id = $1 AND r.is_winner = true AND e.year = 2024 AND e.is_by_election = false`,
+        [ac.id]
+      );
+      out.push({ ...ac, winner2024: winner || null });
+    }
+    res.json(out);
+  } catch (e) { next(e); }
+});
+
 app.get('/api/admin-units/:id/demographics', async (req, res, next) => {
   try {
     res.json(await all(`SELECT * FROM demographics WHERE admin_unit_id = $1`, [req.params.id]));

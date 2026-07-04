@@ -245,3 +245,207 @@
 .winner-only-note strong {
   color: #ffffff;
 }
+
+/* ---- Home ---- */
+.home-shell {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-logo-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 1.5rem;
+}
+
+.home-logo {
+  width: 48px;
+  height: 48px;
+}
+
+.home-title {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.home-subtitle {
+  font-size: 14px;
+  color: #eda100;
+  margin-top: 2px;
+}
+
+.home-tagline {
+  font-size: 15px;
+  color: #898781;
+  margin-bottom: 2.5rem;
+  max-width: 480px;
+}
+
+.scope-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+}
+
+.scope-card {
+  text-align: left;
+  background: #171d26;
+  border: 1px solid #2c2c2a;
+  border-radius: 10px;
+  padding: 1.5rem;
+  cursor: pointer;
+  font-family: inherit;
+  transition: border-color 0.15s ease;
+}
+
+.scope-card:hover {
+  border-color: #eda100;
+}
+
+.scope-card-label {
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.scope-card-desc {
+  display: block;
+  font-size: 13px;
+  color: #898781;
+  line-height: 1.4;
+}
+
+/* ---- Back link (State / District / Constituency views) ---- */
+.back-link {
+  background: none;
+  border: none;
+  color: #898781;
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.back-link:hover {
+  color: #eda100;
+}
+
+/* ---- State view ---- */
+.seat-bar {
+  display: flex;
+  height: 28px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+
+.seat-bar-segment {
+  height: 100%;
+}
+
+.seat-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 13px;
+  color: #c3c2b7;
+  margin-bottom: 2rem;
+}
+
+.flip-table {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-height: 420px;
+  overflow-y: auto;
+}
+
+.flip-row {
+  display: grid;
+  grid-template-columns: 1.5fr 1.2fr 1.3fr;
+  gap: 12px;
+  padding: 8px 10px;
+  background: #171d26;
+  border-radius: 6px;
+  font-size: 13px;
+  align-items: center;
+}
+
+.flip-name {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.flip-district {
+  color: #898781;
+}
+
+.flip-parties {
+  color: #c3c2b7;
+  text-align: right;
+}
+
+/* ---- District view ---- */
+.district-ac-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.district-ac-card {
+  text-align: left;
+  background: #171d26;
+  border: 1px solid #2c2c2a;
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+  font-family: inherit;
+  transition: border-color 0.15s ease;
+}
+
+.district-ac-card:hover {
+  border-color: #eda100;
+}
+
+.district-ac-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.district-ac-winner {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #c3c2b7;
+}
+
+.district-ac-nodata {
+  color: #5f5e5a;
+  font-style: italic;
+}
+
+.district-ac-share {
+  color: #898781;
+}
+
+.party-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
