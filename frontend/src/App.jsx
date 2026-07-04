@@ -105,7 +105,7 @@ export default function App() {
     <div className="app-shell">
       <header className="app-header">
         <div>
-          <p className="eyebrow">Election analytics — foundation prototype</p>
+          <p className="eyebrow">Election analytics — Andhra Pradesh</p>
           <h1>{selectedAc ? selectedAc.name : '...'} {selectedAc?.reservation ? `(${selectedAc.reservation})` : ''}</h1>
           <p className="subhead">Kadapa Lok Sabha constituency, Andhra Pradesh — live from Postgres/SQLite via REST API</p>
         </div>
@@ -124,6 +124,15 @@ export default function App() {
 
       {loading ? (
         <p className="loading">Loading…</p>
+      ) : results.length === 0 ? (
+        <div className="empty-state">
+          <p className="empty-title">No election results yet for {selectedAc?.name}</p>
+          <p className="empty-detail">
+            This constituency exists in the hierarchy (district, PC, reservation status are all real),
+            but multi-election result data hasn't been sourced and seeded for it yet — that work is
+            currently only done for Badvel and Kadapa. Switch to one of those to see full results.
+          </p>
+        </div>
       ) : (
         <>
           <div className="election-tabs">
