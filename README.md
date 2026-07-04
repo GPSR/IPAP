@@ -7,21 +7,36 @@ for Badvel and Kadapa ACs as a detail example within that structure.
 
 ## What's real vs. scope of this pass
 
-**Real, state-wide**: every AC's number, name, district (current 26-district
-system), parent Lok Sabha PC, and reservation status (SC/ST/general).
-Sourced from apteachers.in's district+PC table cross-referenced against
-myneta.info's per-constituency (SC)/(ST) tags — verified to match the
-official totals exactly: **29 SC seats, 7 ST seats, 175 total**. Raw
-sourced data in `db/ap_acs.json`.
+**Real, state-wide, full detail**: every AC's number, name, district, PC,
+and reservation status. Verified against official totals exactly (29 SC,
+7 ST, 175 total).
 
-**Real, two ACs only**: full multi-election results (2004, 2009, 2014,
-2019, Badvel's 2021 by-election, 2024) with real candidate names, votes,
-turnout, margins — for Badvel and Kadapa, both under YSR Kadapa district.
-This is deliberately not yet extended to all 175 ACs; see "Next steps."
+**Real, state-wide, winner-only**: for 173 of 175 ACs, the actual winning
+candidate and party for **2019 and 2024** — sourced from Wikipedia's
+15th/16th Andhra Pradesh Assembly member-list pages, cross-checked against
+official seat totals which matched exactly (2024: TDP 135, JSP 21, BJP 8,
+YSRCP 11; 2019: YSRCP 151, TDP 23, JSP 1). This is deliberately a thinner
+data shape than full results — **no vote counts, no margins, no runner-up,
+no turnout** for these 173, because that data wasn't sourced and we don't
+fabricate numbers we don't have. `results.votes` and `vote_share_pct` are
+`NULL` for these rows; the frontend shows a clear "winner known, full
+results not yet sourced" message instead of a misleading chart.
 
-**Not yet built**: mandals below AC level (only seeded for Badvel/Kadapa),
-election results for the other 173 ACs, booth-level data outside the
-ingestion-pipeline test fixture (see `ingestion/README.md`).
+**Real, full candidate-level detail**: Badvel and Kadapa only — multi-
+election results (2004-2024 for both, plus Badvel's 2021 by-election) with
+real candidate names, votes, turnout, margins.
+
+**What this state-wide winner data already enables** (verified with real
+queries): 142 of 175 seats changed party between 2019 and 2024 — a real
+swing analysis, not aggregate commentary. District-level "which party
+leads this district" breakdowns. The fact that Y.S. Jagan Mohan Reddy held
+his own Pulivendla seat continuously even as his party collapsed
+statewide from 151 to 11 seats.
+
+**Not yet built**: mandals below AC level (only Badvel/Kadapa), full
+vote-count/margin/turnout data for the 173 winner-only ACs, historical
+elections (2004/2009/2014) for anything beyond Badvel/Kadapa, booth-level
+data outside the ingestion-pipeline test fixture.
 
 ## Structure
 
@@ -29,7 +44,9 @@ ingestion-pipeline test fixture (see `ingestion/README.md`).
 schema/schema.sql          Production Postgres DDL (now includes DISTRICT level)
 db/schema.sqlite.sql        Same schema, SQLite dialect, for local dev
 db/ap_acs.json               Sourced data: all 175 ACs w/ district, PC, reservation
-db/seed.js                   Loads full state hierarchy + Badvel/Kadapa results
+db/winners_2019.json          Sourced data: real winner+party for 175 ACs, 2019
+db/winners_2024.json          Sourced data: real winner+party for 175 ACs, 2024
+db/seed.js                   Loads full state hierarchy + Badvel/Kadapa full results + winner-only data
 db/seed_kadapa_pc_only.js.bak  Previous version (2-AC only), kept for reference
 db/migrate_to_postgres.js   Copies the SQLite db into a real Postgres instance
 server.js                   Express API (SQLite), also serves the built frontend
@@ -92,13 +109,15 @@ work at any scale:
 
 ## Next steps
 
-1. **Frontend**: extend beyond the Kadapa-PC-only AC switcher to a real
-   District/PC browser for the full state (state → district → AC drill-down
-   UI). The API already supports this; only the React app needs it.
-2. **Results data for remaining 173 ACs**: this is the big one — sourcing
-   real multi-election results at this scale needs either a lot of
-   individual page fetches or a proper ECI archive scraper, not
-   hand-curation like Badvel/Kadapa.
-3. Real Form 20 ingestion from an unrestricted environment (see `ingestion/README.md`).
-4. PostGIS + real district/AC boundary shapefiles for the map layer.
+1. **Vote counts/margins for the 173 winner-only ACs**: the big remaining
+   gap. Would need either individual per-AC page fetches (~173 pages,
+   each with full multi-year tables like Badvel/Kadapa) or a proper ECI
+   archive/scraper — much bigger sourcing job than winner-only data was.
+2. **Frontend**: extend beyond the Kadapa-PC-only AC switcher to a real
+   District/PC browser for the full state, and surface the swing/flip
+   analysis (142 seats changed party 2019→2024) as an actual view instead
+   of just a query you can run against the database directly.
+3. Historical elections (2004/2009/2014) for ACs beyond Badvel/Kadapa.
+4. Real Form 20 ingestion from an unrestricted environment (see `ingestion/README.md`).
+5. PostGIS + real district/AC boundary shapefiles for the map layer.
 

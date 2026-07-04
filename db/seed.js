@@ -225,5 +225,50 @@ run(
 );
 
 console.log(`Attached full election history (2004-2024) + mandals to Badvel (AC 124, id=${badvelId}) and Kadapa (AC 126, id=${kadapaId}).`);
+
+// ---- Winner-only data for the other 173 ACs ----
+// Real winner name + party for 2019 and 2024, sourced from Wikipedia's
+// 15th/16th Andhra Pradesh Assembly member-list pages. Party counts
+// cross-checked against official totals and matched exactly:
+//   2024: TDP 135, JSP 21, BJP 8, YSRCP 11 (175 total)
+//   2019: YSRCP 151, TDP 23, JSP 1 (175 total)
+// votes/vote_share_pct are left NULL — we know who won, not the vote
+// count or margin, and we don't fabricate numbers we don't have. This is
+// intentionally a different, thinner data shape than Badvel/Kadapa's full
+// candidate-level results; the frontend distinguishes between them.
+const winners2019 = JSON.parse(fs.readFileSync(path.join(__dirname, 'winners_2019.json'), 'utf8'));
+const winners2024 = JSON.parse(fs.readFileSync(path.join(__dirname, 'winners_2024.json'), 'utf8'));
+
+run(`INSERT OR IGNORE INTO elections (election_type, year, is_by_election) VALUES ('AC', 2019, 0)`);
+run(`INSERT OR IGNORE INTO elections (election_type, year, is_by_election) VALUES ('AC', 2024, 0)`);
+const election2019 = one(`SELECT id FROM elections WHERE election_type='AC' AND year=2019 AND is_by_election=0`).id;
+const election2024 = one(`SELECT id FROM elections WHERE election_type='AC' AND year=2024 AND is_by_election=0`).id;
+
+function needsPartyForWinners(abbr) {
+  if (partyIds[abbr]) return;
+  partyIds[abbr] = lastId(run(`INSERT INTO parties (name, abbr, color_hex) VALUES (?, ?, ?)`, [abbr, abbr, partyColors[abbr] || '#888780']));
+}
+
+function seedWinnerOnly(electionId, winnersData) {
+  let inserted = 0;
+  for (const w of winnersData) {
+    if (w.no === 124 || w.no === 126) continue; // Badvel, Kadapa already have full real data
+    const acId = acIds[w.no];
+    if (!acId) continue;
+    needsPartyForWinners(w.party);
+    const candId = lastId(run(`INSERT INTO candidates (name) VALUES (?)`, [w.name]));
+    run(
+      `INSERT INTO results (admin_unit_id, election_id, candidate_id, party_id, votes, vote_share_pct, is_winner)
+       VALUES (?, ?, ?, ?, NULL, NULL, 1)`,
+      [acId, electionId, candId, partyIds[w.party]]
+    );
+    inserted++;
+  }
+  return inserted;
+}
+
+const n2019 = seedWinnerOnly(election2019, winners2019);
+const n2024 = seedWinnerOnly(election2024, winners2024);
+console.log(`Seeded winner-only rows (real winner+party, no vote counts): ${n2019} ACs for 2019, ${n2024} ACs for 2024.`);
 console.log('Everything else: structural only (district, PC, reservation) — no results, no mandals below AC yet.');
 db.close();

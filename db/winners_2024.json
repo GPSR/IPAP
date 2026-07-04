@@ -1,0 +1,877 @@
+[
+ {
+  "no": 1,
+  "name": "Ashok Bendalam",
+  "party": "TDP"
+ },
+ {
+  "no": 2,
+  "name": "Gouthu Sireesha",
+  "party": "TDP"
+ },
+ {
+  "no": 3,
+  "name": "Kinjarapu Atchannaidu",
+  "party": "TDP"
+ },
+ {
+  "no": 4,
+  "name": "Mamidi Govinda Rao",
+  "party": "TDP"
+ },
+ {
+  "no": 5,
+  "name": "Gondu Shankar",
+  "party": "TDP"
+ },
+ {
+  "no": 6,
+  "name": "Koona Ravi Kumar",
+  "party": "TDP"
+ },
+ {
+  "no": 7,
+  "name": "Nadukuditi Eswara Rao",
+  "party": "BJP"
+ },
+ {
+  "no": 8,
+  "name": "Baggu Ramanamurthy",
+  "party": "TDP"
+ },
+ {
+  "no": 9,
+  "name": "Kondru Murali Mohan",
+  "party": "TDP"
+ },
+ {
+  "no": 10,
+  "name": "Nimmaka Jaya Krishna",
+  "party": "JSP"
+ },
+ {
+  "no": 11,
+  "name": "Jagadeeswari Thoyaka",
+  "party": "TDP"
+ },
+ {
+  "no": 12,
+  "name": "Bonela Vijaya Chandra",
+  "party": "TDP"
+ },
+ {
+  "no": 13,
+  "name": "Gummadi Sandhya Rani",
+  "party": "TDP"
+ },
+ {
+  "no": 14,
+  "name": "R. V. S. K. K. Ranga Rao",
+  "party": "TDP"
+ },
+ {
+  "no": 15,
+  "name": "Kimidi Kalavenkata Rao",
+  "party": "TDP"
+ },
+ {
+  "no": 16,
+  "name": "Kondapalli Srinivas",
+  "party": "TDP"
+ },
+ {
+  "no": 17,
+  "name": "Lokam Naga Madhavi",
+  "party": "JSP"
+ },
+ {
+  "no": 18,
+  "name": "Pusapati Aditi Vijayalakshmi",
+  "party": "TDP"
+ },
+ {
+  "no": 19,
+  "name": "Kolla Lalitha Kumari",
+  "party": "TDP"
+ },
+ {
+  "no": 20,
+  "name": "Ganta Srinivasa Rao",
+  "party": "TDP"
+ },
+ {
+  "no": 21,
+  "name": "Velagapudi Ramakrishna Babu",
+  "party": "TDP"
+ },
+ {
+  "no": 22,
+  "name": "Vamsi Krishna Srinivasa Yadav",
+  "party": "JSP"
+ },
+ {
+  "no": 23,
+  "name": "Penmetsa Vishnu Kumar Raju",
+  "party": "BJP"
+ },
+ {
+  "no": 24,
+  "name": "P. G. V. R. Naidu",
+  "party": "TDP"
+ },
+ {
+  "no": 25,
+  "name": "Palla Srinivasa Rao",
+  "party": "TDP"
+ },
+ {
+  "no": 26,
+  "name": "Kalidindi Suryana Naga Sanyasi Raju",
+  "party": "TDP"
+ },
+ {
+  "no": 27,
+  "name": "Bandaru Satyanarayana Murthy",
+  "party": "TDP"
+ },
+ {
+  "no": 28,
+  "name": "Regam Matyalingam",
+  "party": "YSRCP"
+ },
+ {
+  "no": 29,
+  "name": "Matsyarasa Visweswara Raju",
+  "party": "YSRCP"
+ },
+ {
+  "no": 30,
+  "name": "Konathala Ramakrishna",
+  "party": "JSP"
+ },
+ {
+  "no": 31,
+  "name": "Panchakarla Ramesh Babu",
+  "party": "JSP"
+ },
+ {
+  "no": 32,
+  "name": "Sundarapu Vijay Kumar",
+  "party": "JSP"
+ },
+ {
+  "no": 33,
+  "name": "Vangalapudi Anitha",
+  "party": "TDP"
+ },
+ {
+  "no": 34,
+  "name": "Chintakayala Ayyannapatrudu",
+  "party": "TDP"
+ },
+ {
+  "no": 35,
+  "name": "Yanamala Divya",
+  "party": "TDP"
+ },
+ {
+  "no": 36,
+  "name": "Varapula Sathyaprabha",
+  "party": "TDP"
+ },
+ {
+  "no": 37,
+  "name": "Konidela Pawan Kalyan",
+  "party": "JSP"
+ },
+ {
+  "no": 38,
+  "name": "Pantham Venkateswara Rao",
+  "party": "JSP"
+ },
+ {
+  "no": 39,
+  "name": "Nimmakayala Chinarajappa",
+  "party": "TDP"
+ },
+ {
+  "no": 40,
+  "name": "Ramakrishna Reddy Nallamilli",
+  "party": "BJP"
+ },
+ {
+  "no": 41,
+  "name": "Vanamadi Venkateswara Rao",
+  "party": "TDP"
+ },
+ {
+  "no": 42,
+  "name": "Vasamsetti Subhash",
+  "party": "TDP"
+ },
+ {
+  "no": 43,
+  "name": "Datla Subbaraju",
+  "party": "TDP"
+ },
+ {
+  "no": 44,
+  "name": "Aithabathula Anandarao",
+  "party": "TDP"
+ },
+ {
+  "no": 45,
+  "name": "Deva Varaprasad",
+  "party": "JSP"
+ },
+ {
+  "no": 46,
+  "name": "Giddi Satyanarayana",
+  "party": "JSP"
+ },
+ {
+  "no": 47,
+  "name": "Bandaru Satyananda Rao",
+  "party": "TDP"
+ },
+ {
+  "no": 48,
+  "name": "V. Jogeswara Rao",
+  "party": "TDP"
+ },
+ {
+  "no": 49,
+  "name": "Bathula Balaramakrishna",
+  "party": "JSP"
+ },
+ {
+  "no": 50,
+  "name": "Adireddy Srinivas",
+  "party": "TDP"
+ },
+ {
+  "no": 51,
+  "name": "Gorantla Butchaiah Chowdary",
+  "party": "TDP"
+ },
+ {
+  "no": 52,
+  "name": "Jyothula Nehru",
+  "party": "TDP"
+ },
+ {
+  "no": 53,
+  "name": "Miriyala Sirisha Devi",
+  "party": "TDP"
+ },
+ {
+  "no": 54,
+  "name": "Muppidi Venkateswara Rao",
+  "party": "TDP"
+ },
+ {
+  "no": 55,
+  "name": "Kandula Durgesh",
+  "party": "JSP"
+ },
+ {
+  "no": 56,
+  "name": "Satyanarayana Pithani",
+  "party": "TDP"
+ },
+ {
+  "no": 57,
+  "name": "Nimmala Rama Naidu",
+  "party": "TDP"
+ },
+ {
+  "no": 58,
+  "name": "Bommidi Narayana Nayakar",
+  "party": "JSP"
+ },
+ {
+  "no": 59,
+  "name": "Pulaparthi Ramanjaneyulu",
+  "party": "JSP"
+ },
+ {
+  "no": 60,
+  "name": "Raghu Rama Krishna Raju",
+  "party": "TDP"
+ },
+ {
+  "no": 61,
+  "name": "Arimilli Radha Krishna",
+  "party": "TDP"
+ },
+ {
+  "no": 62,
+  "name": "Bolisetti Srinivas",
+  "party": "JSP"
+ },
+ {
+  "no": 63,
+  "name": "Dharmaraju Patsamatla",
+  "party": "JSP"
+ },
+ {
+  "no": 64,
+  "name": "Chintamaneni Prabhakar",
+  "party": "TDP"
+ },
+ {
+  "no": 65,
+  "name": "Radha Krishnayya Badeti",
+  "party": "TDP"
+ },
+ {
+  "no": 66,
+  "name": "Maddipati Venkata Raju",
+  "party": "TDP"
+ },
+ {
+  "no": 67,
+  "name": "Chirri Balaraju",
+  "party": "JSP"
+ },
+ {
+  "no": 68,
+  "name": "Roshan Kumar Songa",
+  "party": "TDP"
+ },
+ {
+  "no": 69,
+  "name": "Kolikapudi Srinivasa Rao",
+  "party": "TDP"
+ },
+ {
+  "no": 70,
+  "name": "Kolusu Parthasarathy",
+  "party": "TDP"
+ },
+ {
+  "no": 71,
+  "name": "Yarlagadda Venkata Rao",
+  "party": "TDP"
+ },
+ {
+  "no": 72,
+  "name": "Venigandla Ramu",
+  "party": "TDP"
+ },
+ {
+  "no": 73,
+  "name": "Kamineni Srinivas",
+  "party": "BJP"
+ },
+ {
+  "no": 74,
+  "name": "Kagitha Krishna Prasad",
+  "party": "TDP"
+ },
+ {
+  "no": 75,
+  "name": "Kollu Ravindra",
+  "party": "TDP"
+ },
+ {
+  "no": 76,
+  "name": "Mandali Buddha Prasad",
+  "party": "JSP"
+ },
+ {
+  "no": 77,
+  "name": "Varla Kumar Raja",
+  "party": "TDP"
+ },
+ {
+  "no": 78,
+  "name": "Bode Prasad",
+  "party": "TDP"
+ },
+ {
+  "no": 79,
+  "name": "Sujana Chowdary",
+  "party": "BJP"
+ },
+ {
+  "no": 80,
+  "name": "Bonda Umamaheswara Rao",
+  "party": "TDP"
+ },
+ {
+  "no": 81,
+  "name": "Gadde Ramamohan",
+  "party": "TDP"
+ },
+ {
+  "no": 82,
+  "name": "Vasantha Venkata Krishna Prasad",
+  "party": "TDP"
+ },
+ {
+  "no": 83,
+  "name": "Tangirala Sowmya",
+  "party": "TDP"
+ },
+ {
+  "no": 84,
+  "name": "Rajagopal Sreeram",
+  "party": "TDP"
+ },
+ {
+  "no": 85,
+  "name": "Bhashyam Praveen",
+  "party": "TDP"
+ },
+ {
+  "no": 86,
+  "name": "Tenali Sravan Kumar",
+  "party": "TDP"
+ },
+ {
+  "no": 87,
+  "name": "Nara Lokesh",
+  "party": "TDP"
+ },
+ {
+  "no": 88,
+  "name": "Dhulipalla Narendra Kumar",
+  "party": "TDP"
+ },
+ {
+  "no": 89,
+  "name": "Nakka Ananda Babu",
+  "party": "TDP"
+ },
+ {
+  "no": 90,
+  "name": "Anagani Satya Prasad",
+  "party": "TDP"
+ },
+ {
+  "no": 91,
+  "name": "Nadendla Manohar",
+  "party": "JSP"
+ },
+ {
+  "no": 92,
+  "name": "Vegesana Narendra Varma Raju",
+  "party": "TDP"
+ },
+ {
+  "no": 93,
+  "name": "Burla Ramanjaneyulu",
+  "party": "TDP"
+ },
+ {
+  "no": 94,
+  "name": "Galla Madhavi",
+  "party": "TDP"
+ },
+ {
+  "no": 95,
+  "name": "Mohammed Naseer Ahmed",
+  "party": "TDP"
+ },
+ {
+  "no": 96,
+  "name": "Prathipati Pulla Rao",
+  "party": "TDP"
+ },
+ {
+  "no": 97,
+  "name": "Chadalavada Aravinda Babu",
+  "party": "TDP"
+ },
+ {
+  "no": 98,
+  "name": "Kanna Lakshminaraya",
+  "party": "TDP"
+ },
+ {
+  "no": 99,
+  "name": "G. V. Anjaneyulu",
+  "party": "TDP"
+ },
+ {
+  "no": 100,
+  "name": "Yarapathineni Srinivasa Rao",
+  "party": "TDP"
+ },
+ {
+  "no": 101,
+  "name": "Julakanti Brahmananda Reddy",
+  "party": "TDP"
+ },
+ {
+  "no": 102,
+  "name": "Tatiparthi Chandrasekhar",
+  "party": "YSRCP"
+ },
+ {
+  "no": 103,
+  "name": "Buchepalli Siva Prasad Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 104,
+  "name": "Yeluri Sambasiva Rao",
+  "party": "TDP"
+ },
+ {
+  "no": 105,
+  "name": "Gottipati Ravi Kumar",
+  "party": "TDP"
+ },
+ {
+  "no": 106,
+  "name": "Madduluri Malakondaiah Yadav",
+  "party": "TDP"
+ },
+ {
+  "no": 107,
+  "name": "B. N. Vijay Kumar",
+  "party": "TDP"
+ },
+ {
+  "no": 108,
+  "name": "Damacharla Janardhana Rao",
+  "party": "TDP"
+ },
+ {
+  "no": 109,
+  "name": "Inturi Nageswara Rao",
+  "party": "TDP"
+ },
+ {
+  "no": 110,
+  "name": "Dola Sree Bala Veeranjaneya Swamy",
+  "party": "TDP"
+ },
+ {
+  "no": 111,
+  "name": "Kandula Narayana Reddy",
+  "party": "TDP"
+ },
+ {
+  "no": 112,
+  "name": "Muthumula Ashok Reddy",
+  "party": "TDP"
+ },
+ {
+  "no": 113,
+  "name": "Mukku Ugra Narasimha Reddy",
+  "party": "TDP"
+ },
+ {
+  "no": 114,
+  "name": "Dagumati Venkata Krishna Reddy",
+  "party": "TDP"
+ },
+ {
+  "no": 115,
+  "name": "Anam Ramanarayana Reddy",
+  "party": "TDP"
+ },
+ {
+  "no": 116,
+  "name": "Vemireddy Prashanti Reddy",
+  "party": "TDP"
+ },
+ {
+  "no": 117,
+  "name": "Ponguru Narayana",
+  "party": "TDP"
+ },
+ {
+  "no": 118,
+  "name": "Kotamreddy Sridhar Reddy",
+  "party": "TDP"
+ },
+ {
+  "no": 119,
+  "name": "Somireddy Chandra Mohan Reddy",
+  "party": "TDP"
+ },
+ {
+  "no": 120,
+  "name": "Pasam Sunil Kumar",
+  "party": "TDP"
+ },
+ {
+  "no": 121,
+  "name": "Nelavala Vijayasree",
+  "party": "TDP"
+ },
+ {
+  "no": 122,
+  "name": "Kurugondla Ramakrishna",
+  "party": "TDP"
+ },
+ {
+  "no": 123,
+  "name": "Kakarla Suresh",
+  "party": "TDP"
+ },
+ {
+  "no": 124,
+  "name": "Dasari Sudha",
+  "party": "YSRCP"
+ },
+ {
+  "no": 125,
+  "name": "Akepati Amarnath Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 126,
+  "name": "Reddeppagari Madhavi",
+  "party": "TDP"
+ },
+ {
+  "no": 127,
+  "name": "Arava Sreedhar",
+  "party": "JSP"
+ },
+ {
+  "no": 128,
+  "name": "Mandipalli Ramprasad Reddy",
+  "party": "TDP"
+ },
+ {
+  "no": 129,
+  "name": "Y. S. Jagan Mohan Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 130,
+  "name": "Putha Krishna Chaitanya Reddy",
+  "party": "TDP"
+ },
+ {
+  "no": 131,
+  "name": "Ch. Adinarayana Reddy",
+  "party": "BJP"
+ },
+ {
+  "no": 132,
+  "name": "Nandyala Varada Rajula Reddy",
+  "party": "TDP"
+ },
+ {
+  "no": 133,
+  "name": "Putta Sudhakar Yadav",
+  "party": "TDP"
+ },
+ {
+  "no": 134,
+  "name": "Bhuma Akhila Priya",
+  "party": "TDP"
+ },
+ {
+  "no": 135,
+  "name": "Budda Rajasekhar Reddy",
+  "party": "TDP"
+ },
+ {
+  "no": 136,
+  "name": "Githa Jayasurya",
+  "party": "TDP"
+ },
+ {
+  "no": 137,
+  "name": "T. G. Bharath",
+  "party": "TDP"
+ },
+ {
+  "no": 138,
+  "name": "Gowru Charitha Reddy",
+  "party": "TDP"
+ },
+ {
+  "no": 139,
+  "name": "N. M. D. Farooq",
+  "party": "TDP"
+ },
+ {
+  "no": 140,
+  "name": "B. C. Janardhan Reddy",
+  "party": "TDP"
+ },
+ {
+  "no": 141,
+  "name": "Kotla Jayasurya Prakasha Reddy",
+  "party": "TDP"
+ },
+ {
+  "no": 142,
+  "name": "K. E. Shyam Babu",
+  "party": "TDP"
+ },
+ {
+  "no": 143,
+  "name": "Boggula Dastagiri",
+  "party": "TDP"
+ },
+ {
+  "no": 144,
+  "name": "Jaya Nageswara Reddy",
+  "party": "TDP"
+ },
+ {
+  "no": 145,
+  "name": "Y. Balanagi Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 146,
+  "name": "P. V. Parthasarathi",
+  "party": "BJP"
+ },
+ {
+  "no": 147,
+  "name": "Busine Virupakshi",
+  "party": "YSRCP"
+ },
+ {
+  "no": 148,
+  "name": "Kalava Srinivasulu",
+  "party": "TDP"
+ },
+ {
+  "no": 149,
+  "name": "Payyavula Keshav",
+  "party": "TDP"
+ },
+ {
+  "no": 150,
+  "name": "Gummanur Jayaram",
+  "party": "TDP"
+ },
+ {
+  "no": 151,
+  "name": "J. C. Ashmit Reddy",
+  "party": "TDP"
+ },
+ {
+  "no": 152,
+  "name": "Bandaru Sravani Sree",
+  "party": "TDP"
+ },
+ {
+  "no": 153,
+  "name": "Daggupati Venkateswara Prasad",
+  "party": "TDP"
+ },
+ {
+  "no": 154,
+  "name": "Amilineni Surendra Babu",
+  "party": "TDP"
+ },
+ {
+  "no": 155,
+  "name": "Paritala Sunitha",
+  "party": "TDP"
+ },
+ {
+  "no": 156,
+  "name": "M. S. Raju",
+  "party": "TDP"
+ },
+ {
+  "no": 157,
+  "name": "Nandamuri Balakrishna",
+  "party": "TDP"
+ },
+ {
+  "no": 158,
+  "name": "S. Savitha",
+  "party": "TDP"
+ },
+ {
+  "no": 159,
+  "name": "Palle Sindhura Reddy",
+  "party": "TDP"
+ },
+ {
+  "no": 160,
+  "name": "Satya Kumar Yadav",
+  "party": "BJP"
+ },
+ {
+  "no": 161,
+  "name": "Kandikunta Venkata Prasad",
+  "party": "TDP"
+ },
+ {
+  "no": 162,
+  "name": "Peddireddy Dwarakanatha Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 163,
+  "name": "Nallari Kishore Kumar Reddy",
+  "party": "TDP"
+ },
+ {
+  "no": 164,
+  "name": "Shahjahan Basha",
+  "party": "TDP"
+ },
+ {
+  "no": 165,
+  "name": "Peddireddy Ramachandra Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 166,
+  "name": "Pulivarthi Venkata Mani Prasad",
+  "party": "TDP"
+ },
+ {
+  "no": 167,
+  "name": "Arani Srinivasulu",
+  "party": "JSP"
+ },
+ {
+  "no": 168,
+  "name": "Bojjala Venkata Sudhir Reddy",
+  "party": "TDP"
+ },
+ {
+  "no": 169,
+  "name": "Koneti Adimulam",
+  "party": "TDP"
+ },
+ {
+  "no": 170,
+  "name": "Gali Bhanu Prakash",
+  "party": "TDP"
+ },
+ {
+  "no": 171,
+  "name": "V. M. Thomas",
+  "party": "TDP"
+ },
+ {
+  "no": 172,
+  "name": "Gurajala Jagan Mohan",
+  "party": "TDP"
+ },
+ {
+  "no": 173,
+  "name": "Kalikiri Murali Mohan",
+  "party": "TDP"
+ },
+ {
+  "no": 174,
+  "name": "N. Amarnath Reddy",
+  "party": "TDP"
+ },
+ {
+  "no": 175,
+  "name": "N. Chandrababu Naidu",
+  "party": "TDP"
+ }
+]

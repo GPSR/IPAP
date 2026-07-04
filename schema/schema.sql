@@ -54,8 +54,8 @@ CREATE TABLE results (
     election_id     INTEGER NOT NULL REFERENCES elections(id),
     candidate_id    INTEGER NOT NULL REFERENCES candidates(id),
     party_id        INTEGER REFERENCES parties(id),  -- NULL for independents grouped as IND
-    votes           INTEGER NOT NULL,
-    vote_share_pct  NUMERIC(5,2),
+    votes           INTEGER,        -- nullable: NULL means "known winner, vote count not yet sourced"
+    vote_share_pct  NUMERIC(5,2),   -- NULL under the same condition, never fabricated
     is_winner       BOOLEAN DEFAULT FALSE,
     UNIQUE(admin_unit_id, election_id, candidate_id)
 );

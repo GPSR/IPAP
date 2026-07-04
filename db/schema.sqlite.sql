@@ -45,7 +45,7 @@ CREATE TABLE results (
     election_id     INTEGER NOT NULL REFERENCES elections(id),
     candidate_id    INTEGER NOT NULL REFERENCES candidates(id),
     party_id        INTEGER REFERENCES parties(id),
-    votes           INTEGER NOT NULL,
+    votes           INTEGER,
     vote_share_pct  REAL,
     is_winner       INTEGER DEFAULT 0,
     UNIQUE(admin_unit_id, election_id, candidate_id)

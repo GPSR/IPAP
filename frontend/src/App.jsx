@@ -181,23 +181,33 @@ export default function App() {
 
               <section className="chart-section">
                 <h2>Candidate results — {selectedYear}</h2>
-                <ResponsiveContainer width="100%" height={Math.max(120, currentElection.candidates.length * 40)}>
-                  <BarChart data={currentElection.candidates} layout="vertical" margin={{ left: 24, right: 24 }}>
-                    <CartesianGrid strokeDasharray="3 3" stroke="#2c2c2a" horizontal={false} />
-                    <XAxis type="number" domain={[0, 100]} tickFormatter={v => `${v}%`} stroke="#898781" fontSize={12} />
-                    <YAxis type="category" dataKey="candidate" width={200} stroke="#898781" fontSize={12} />
-                    <Tooltip
-                      contentStyle={{ background: '#171d26', border: '1px solid #2c2c2a' }}
-                      formatter={(v, n, p) => [`${v}%`, p.payload.party]}
-                    />
-                    <Bar dataKey="vote_share_pct" radius={[0, 4, 4, 0]}>
-                      {currentElection.candidates.map((c, i) => (
-                        <Cell key={i} fill={PARTY_COLORS[c.party] || '#888780'} />
-                      ))}
-                      <LabelList dataKey="vote_share_pct" position="right" formatter={v => `${v}%`} fill="#c3c2b7" fontSize={12} />
-                    </Bar>
-                  </BarChart>
-                </ResponsiveContainer>
+                {currentElection.candidates.every(c => c.vote_share_pct === null) ? (
+                  <div className="winner-only-note">
+                    <p>
+                      <strong>{currentElection.candidates[0].candidate}</strong> ({currentElection.candidates[0].party}) won this seat,
+                      but full candidate-level results (vote counts, margin, runner-up) haven't been sourced for this
+                      constituency yet — only the winner and party are confirmed real data.
+                    </p>
+                  </div>
+                ) : (
+                  <ResponsiveContainer width="100%" height={Math.max(120, currentElection.candidates.length * 40)}>
+                    <BarChart data={currentElection.candidates} layout="vertical" margin={{ left: 24, right: 24 }}>
+                      <CartesianGrid strokeDasharray="3 3" stroke="#2c2c2a" horizontal={false} />
+                      <XAxis type="number" domain={[0, 100]} tickFormatter={v => `${v}%`} stroke="#898781" fontSize={12} />
+                      <YAxis type="category" dataKey="candidate" width={200} stroke="#898781" fontSize={12} />
+                      <Tooltip
+                        contentStyle={{ background: '#171d26', border: '1px solid #2c2c2a' }}
+                        formatter={(v, n, p) => [`${v}%`, p.payload.party]}
+                      />
+                      <Bar dataKey="vote_share_pct" radius={[0, 4, 4, 0]}>
+                        {currentElection.candidates.map((c, i) => (
+                          <Cell key={i} fill={PARTY_COLORS[c.party] || '#888780'} />
+                        ))}
+                        <LabelList dataKey="vote_share_pct" position="right" formatter={v => `${v}%`} fill="#c3c2b7" fontSize={12} />
+                      </Bar>
+                    </BarChart>
+                  </ResponsiveContainer>
+                )}
               </section>
             </>
           )}

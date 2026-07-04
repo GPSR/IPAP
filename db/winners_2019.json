@@ -1,0 +1,877 @@
+[
+ {
+  "no": 1,
+  "name": "Ashok Bendalam",
+  "party": "TDP"
+ },
+ {
+  "no": 2,
+  "name": "Seediri Appalaraju",
+  "party": "YSRCP"
+ },
+ {
+  "no": 3,
+  "name": "Kinjarapu Atchannaidu",
+  "party": "TDP"
+ },
+ {
+  "no": 4,
+  "name": "Reddy Shanthi",
+  "party": "YSRCP"
+ },
+ {
+  "no": 5,
+  "name": "Dharmana Prasada Rao",
+  "party": "YSRCP"
+ },
+ {
+  "no": 6,
+  "name": "Thammineni Seetharam",
+  "party": "YSRCP"
+ },
+ {
+  "no": 7,
+  "name": "Gorle Kiran Kumar",
+  "party": "YSRCP"
+ },
+ {
+  "no": 8,
+  "name": "Dharmana Krishna Das",
+  "party": "YSRCP"
+ },
+ {
+  "no": 9,
+  "name": "Kambala Jogulu",
+  "party": "YSRCP"
+ },
+ {
+  "no": 10,
+  "name": "Viswasarayi Kalavathi",
+  "party": "YSRCP"
+ },
+ {
+  "no": 11,
+  "name": "Pamula Pushpa Sreevani",
+  "party": "YSRCP"
+ },
+ {
+  "no": 12,
+  "name": "Alajangi Jogarao",
+  "party": "YSRCP"
+ },
+ {
+  "no": 13,
+  "name": "Peedika Rajanna Dora",
+  "party": "YSRCP"
+ },
+ {
+  "no": 14,
+  "name": "Sambangi Venkata China Appala Naidu",
+  "party": "YSRCP"
+ },
+ {
+  "no": 15,
+  "name": "Botcha Satyanarayana",
+  "party": "YSRCP"
+ },
+ {
+  "no": 16,
+  "name": "Botcha Appalanarasayya",
+  "party": "YSRCP"
+ },
+ {
+  "no": 17,
+  "name": "Baddukonda Appala Naidu",
+  "party": "YSRCP"
+ },
+ {
+  "no": 18,
+  "name": "Kolagatla Veerabhadra Swamy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 19,
+  "name": "Kadubandi Srinivasa Rao",
+  "party": "YSRCP"
+ },
+ {
+  "no": 20,
+  "name": "Muttamsetti Srinivasa Rao",
+  "party": "YSRCP"
+ },
+ {
+  "no": 21,
+  "name": "Velagapudi Ramakrishna Babu",
+  "party": "TDP"
+ },
+ {
+  "no": 22,
+  "name": "Vasupalli Ganesh Kumar",
+  "party": "TDP"
+ },
+ {
+  "no": 23,
+  "name": "Ganta Srinivasa Rao",
+  "party": "TDP"
+ },
+ {
+  "no": 24,
+  "name": "P. G. V. R. Naidu",
+  "party": "TDP"
+ },
+ {
+  "no": 25,
+  "name": "Tippala Nagireddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 26,
+  "name": "Karanam Dharmasri",
+  "party": "YSRCP"
+ },
+ {
+  "no": 27,
+  "name": "Budi Mutyala Naidu",
+  "party": "YSRCP"
+ },
+ {
+  "no": 28,
+  "name": "Chetti Palguna",
+  "party": "YSRCP"
+ },
+ {
+  "no": 29,
+  "name": "Kottagulli Bhagya Lakshmi",
+  "party": "YSRCP"
+ },
+ {
+  "no": 30,
+  "name": "Gudivada Amarnath",
+  "party": "YSRCP"
+ },
+ {
+  "no": 31,
+  "name": "Annamreddy Adeep Raj",
+  "party": "YSRCP"
+ },
+ {
+  "no": 32,
+  "name": "Uppalapati Venkata Ramanamurthy Raju",
+  "party": "YSRCP"
+ },
+ {
+  "no": 33,
+  "name": "Golla Babu Rao",
+  "party": "YSRCP"
+ },
+ {
+  "no": 34,
+  "name": "Petla Uma Sankara Ganesh",
+  "party": "YSRCP"
+ },
+ {
+  "no": 35,
+  "name": "Dadisetti Raja",
+  "party": "YSRCP"
+ },
+ {
+  "no": 36,
+  "name": "Parvatha Purnachandra Prasad",
+  "party": "YSRCP"
+ },
+ {
+  "no": 37,
+  "name": "Dorababu Pendem",
+  "party": "YSRCP"
+ },
+ {
+  "no": 38,
+  "name": "Kurasala Kannababu",
+  "party": "YSRCP"
+ },
+ {
+  "no": 39,
+  "name": "Nimmakayala Chinarajappa",
+  "party": "TDP"
+ },
+ {
+  "no": 40,
+  "name": "Sathi Suryanarayana Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 41,
+  "name": "Dwarampudi Chandrasekhar Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 42,
+  "name": "Chelluboyina Venugopala Krishna",
+  "party": "YSRCP"
+ },
+ {
+  "no": 43,
+  "name": "Ponnada Venkata Satish Kumar",
+  "party": "YSRCP"
+ },
+ {
+  "no": 44,
+  "name": "Pinipe Viswarup",
+  "party": "YSRCP"
+ },
+ {
+  "no": 45,
+  "name": "Rapaka Vara Prasada Rao",
+  "party": "JSP"
+ },
+ {
+  "no": 46,
+  "name": "Kondeti Chittibabu",
+  "party": "YSRCP"
+ },
+ {
+  "no": 47,
+  "name": "Chirla Jaggireddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 48,
+  "name": "V. Jogeswara Rao",
+  "party": "TDP"
+ },
+ {
+  "no": 49,
+  "name": "Jakkampudi Raja",
+  "party": "YSRCP"
+ },
+ {
+  "no": 50,
+  "name": "Adireddy Bhavani",
+  "party": "TDP"
+ },
+ {
+  "no": 51,
+  "name": "Gorantla Butchaiah Chowdary",
+  "party": "TDP"
+ },
+ {
+  "no": 52,
+  "name": "Jyothula Chantibabu",
+  "party": "YSRCP"
+ },
+ {
+  "no": 53,
+  "name": "Nagulapalli Dhanalakshmi",
+  "party": "YSRCP"
+ },
+ {
+  "no": 54,
+  "name": "Taneti Vanitha",
+  "party": "YSRCP"
+ },
+ {
+  "no": 55,
+  "name": "Geddam Srinivas Naidu",
+  "party": "YSRCP"
+ },
+ {
+  "no": 56,
+  "name": "Cherukuvada Sri Ranganadha Raju",
+  "party": "YSRCP"
+ },
+ {
+  "no": 57,
+  "name": "Nimmala Rama Naidu",
+  "party": "TDP"
+ },
+ {
+  "no": 58,
+  "name": "Mudunuri Prasada Raju",
+  "party": "YSRCP"
+ },
+ {
+  "no": 59,
+  "name": "Grandhi Srinivas",
+  "party": "YSRCP"
+ },
+ {
+  "no": 60,
+  "name": "Mantena Rama Raju",
+  "party": "TDP"
+ },
+ {
+  "no": 61,
+  "name": "Karumuri Venkata Nageswara Rao",
+  "party": "YSRCP"
+ },
+ {
+  "no": 62,
+  "name": "Kottu Satyanarayana",
+  "party": "YSRCP"
+ },
+ {
+  "no": 63,
+  "name": "Puppala Srinivasa Rao",
+  "party": "YSRCP"
+ },
+ {
+  "no": 64,
+  "name": "Kotaru Abbaya Chowdary",
+  "party": "YSRCP"
+ },
+ {
+  "no": 65,
+  "name": "Alla Kali Krishna Srinivas",
+  "party": "YSRCP"
+ },
+ {
+  "no": 66,
+  "name": "Talari Venkatrao",
+  "party": "YSRCP"
+ },
+ {
+  "no": 67,
+  "name": "Tellam Balaraju",
+  "party": "YSRCP"
+ },
+ {
+  "no": 68,
+  "name": "Vunnamatla Eliza",
+  "party": "YSRCP"
+ },
+ {
+  "no": 69,
+  "name": "Kokkiligadda Rakshana Nidhi",
+  "party": "YSRCP"
+ },
+ {
+  "no": 70,
+  "name": "Meka Venkata Pratap Apparao",
+  "party": "YSRCP"
+ },
+ {
+  "no": 71,
+  "name": "Vallabhaneni Vamsi Mohan",
+  "party": "TDP"
+ },
+ {
+  "no": 72,
+  "name": "Kodali Sri Venkateswara Rao",
+  "party": "YSRCP"
+ },
+ {
+  "no": 73,
+  "name": "Dulam Nageswara Rao",
+  "party": "YSRCP"
+ },
+ {
+  "no": 74,
+  "name": "Jogi Ramesh",
+  "party": "YSRCP"
+ },
+ {
+  "no": 75,
+  "name": "Perni Venkataramaiah",
+  "party": "YSRCP"
+ },
+ {
+  "no": 76,
+  "name": "Simhadri Ramesh Babu",
+  "party": "YSRCP"
+ },
+ {
+  "no": 77,
+  "name": "Kaile Anil Kumar",
+  "party": "YSRCP"
+ },
+ {
+  "no": 78,
+  "name": "Kolusu Parthasarathy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 79,
+  "name": "Vellampalli Srinivas",
+  "party": "YSRCP"
+ },
+ {
+  "no": 80,
+  "name": "Malladi Vishnu",
+  "party": "YSRCP"
+ },
+ {
+  "no": 81,
+  "name": "Gadde Ramamohan",
+  "party": "TDP"
+ },
+ {
+  "no": 82,
+  "name": "Vasantha Venkata Krishna Prasad",
+  "party": "YSRCP"
+ },
+ {
+  "no": 83,
+  "name": "Monditoka Jagan Mohana Rao",
+  "party": "YSRCP"
+ },
+ {
+  "no": 84,
+  "name": "Samineni Udayabhanu",
+  "party": "YSRCP"
+ },
+ {
+  "no": 85,
+  "name": "Namburu Sankara Rao",
+  "party": "YSRCP"
+ },
+ {
+  "no": 86,
+  "name": "Undavalli Sridevi",
+  "party": "YSRCP"
+ },
+ {
+  "no": 87,
+  "name": "Alla Ramakrishna Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 88,
+  "name": "Kilari Venkata Rosaiah",
+  "party": "YSRCP"
+ },
+ {
+  "no": 89,
+  "name": "Merugu Nagarjuna",
+  "party": "YSRCP"
+ },
+ {
+  "no": 90,
+  "name": "Anagani Satya Prasad",
+  "party": "TDP"
+ },
+ {
+  "no": 91,
+  "name": "Annabathuni Siva Kumar",
+  "party": "YSRCP"
+ },
+ {
+  "no": 92,
+  "name": "Kona Raghupathi",
+  "party": "YSRCP"
+ },
+ {
+  "no": 93,
+  "name": "Mekathoti Sucharita",
+  "party": "YSRCP"
+ },
+ {
+  "no": 94,
+  "name": "Maddali Giridhar Rao",
+  "party": "TDP"
+ },
+ {
+  "no": 95,
+  "name": "Mohammad Musthafa Shaik",
+  "party": "YSRCP"
+ },
+ {
+  "no": 96,
+  "name": "Vidadala Rajini",
+  "party": "YSRCP"
+ },
+ {
+  "no": 97,
+  "name": "Gopireddy Srinivasa Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 98,
+  "name": "Ambati Rambabu",
+  "party": "YSRCP"
+ },
+ {
+  "no": 99,
+  "name": "Bolla Brahma Naidu",
+  "party": "YSRCP"
+ },
+ {
+  "no": 100,
+  "name": "Kasu Mahesh Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 101,
+  "name": "Ramakrishna Reddy Pinnelli",
+  "party": "YSRCP"
+ },
+ {
+  "no": 102,
+  "name": "Audimulapu Suresh",
+  "party": "YSRCP"
+ },
+ {
+  "no": 103,
+  "name": "Maddisetty Venugopal",
+  "party": "YSRCP"
+ },
+ {
+  "no": 104,
+  "name": "Yeluri Sambasiva Rao",
+  "party": "TDP"
+ },
+ {
+  "no": 105,
+  "name": "Gottipati Ravi Kumar",
+  "party": "TDP"
+ },
+ {
+  "no": 106,
+  "name": "Karanam Balaram Krishna Murthy",
+  "party": "TDP"
+ },
+ {
+  "no": 107,
+  "name": "T. J. R. Sudhakar Babu",
+  "party": "YSRCP"
+ },
+ {
+  "no": 108,
+  "name": "Balineni Srinivasa Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 109,
+  "name": "Manugunta Maheedhar Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 110,
+  "name": "Dola Sree Bala Veeranjaneya Swamy",
+  "party": "TDP"
+ },
+ {
+  "no": 111,
+  "name": "Kunduru Nagarjuna Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 112,
+  "name": "Anna Rambabu",
+  "party": "YSRCP"
+ },
+ {
+  "no": 113,
+  "name": "Burra Madhusudan Yadav",
+  "party": "YSRCP"
+ },
+ {
+  "no": 114,
+  "name": "Ramireddy Pratap Kumar Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 115,
+  "name": "Mekapati Goutham Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 116,
+  "name": "Nallapareddy Prasanna Kumar Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 117,
+  "name": "Anil Kumar Poluboina",
+  "party": "YSRCP"
+ },
+ {
+  "no": 118,
+  "name": "Kotamreddy Sridhar Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 119,
+  "name": "Kakani Govardhan Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 120,
+  "name": "Velagapalli Varaprasad Rao",
+  "party": "YSRCP"
+ },
+ {
+  "no": 121,
+  "name": "Kiliveti Sanjeevaiah",
+  "party": "YSRCP"
+ },
+ {
+  "no": 122,
+  "name": "Anam Ramanarayana Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 123,
+  "name": "Mekapati Chandra Sekhar Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 124,
+  "name": "Gunthoti Venkata Subbaiah",
+  "party": "YSRCP"
+ },
+ {
+  "no": 125,
+  "name": "Meda Venkata Mallikarjuna Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 126,
+  "name": "Amzath Basha Shaik Bepari",
+  "party": "YSRCP"
+ },
+ {
+  "no": 127,
+  "name": "Koramutla Sreenivasulu",
+  "party": "YSRCP"
+ },
+ {
+  "no": 128,
+  "name": "Gadikota Srikanth Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 129,
+  "name": "Y. S. Jagan Mohan Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 130,
+  "name": "Pochimareddy Ravindranath Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 131,
+  "name": "Mule Sudheer Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 132,
+  "name": "Rachamallu Siva Prasad Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 133,
+  "name": "Raghuramireddy Settipalli",
+  "party": "YSRCP"
+ },
+ {
+  "no": 134,
+  "name": "Gangula Brijendra Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 135,
+  "name": "Silpa Chakrapani Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 136,
+  "name": "Thoguru Arthur",
+  "party": "YSRCP"
+ },
+ {
+  "no": 137,
+  "name": "Abdul Hafeez Khan",
+  "party": "YSRCP"
+ },
+ {
+  "no": 138,
+  "name": "Katasani Rambhupal Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 139,
+  "name": "Shilpa Ravi Chandra Kishore Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 140,
+  "name": "Katasani Rami Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 141,
+  "name": "Buggana Rajendranath",
+  "party": "YSRCP"
+ },
+ {
+  "no": 142,
+  "name": "Kangati Sreedevi",
+  "party": "YSRCP"
+ },
+ {
+  "no": 143,
+  "name": "Jaradoddi Sudhakar",
+  "party": "YSRCP"
+ },
+ {
+  "no": 144,
+  "name": "K. Chenna Kesava Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 145,
+  "name": "Y. Balanagi Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 146,
+  "name": "Y. Sai Prasad Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 147,
+  "name": "Gummanur Jayaram",
+  "party": "YSRCP"
+ },
+ {
+  "no": 148,
+  "name": "Kapu Ramachandra Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 149,
+  "name": "Payyavula Keshav",
+  "party": "TDP"
+ },
+ {
+  "no": 150,
+  "name": "Y. Venkatarama Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 151,
+  "name": "K. Pedda Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 152,
+  "name": "Jonnalagadda Padmavathy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 153,
+  "name": "Anantha Venkatarami Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 154,
+  "name": "K. V. Ushashri Charan",
+  "party": "YSRCP"
+ },
+ {
+  "no": 155,
+  "name": "Thopudurthi Prakash Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 156,
+  "name": "M. Thippeswamy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 157,
+  "name": "Nandamuri Balakrishna",
+  "party": "TDP"
+ },
+ {
+  "no": 158,
+  "name": "Malagundla Sankaranarayana",
+  "party": "YSRCP"
+ },
+ {
+  "no": 159,
+  "name": "Duddukunta Sreedhar Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 160,
+  "name": "Kethireddy Venkatarami Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 161,
+  "name": "P. V. Sidda Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 162,
+  "name": "Peddireddi Dwarakanatha Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 163,
+  "name": "Chintala Ramachandra Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 164,
+  "name": "Mohammed Nawaz Basha",
+  "party": "YSRCP"
+ },
+ {
+  "no": 165,
+  "name": "Peddireddy Ramachandra Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 166,
+  "name": "Chevireddy Bhaskar Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 167,
+  "name": "Bhumana Karunakar Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 168,
+  "name": "Biyyapu Madhusudhan Reddy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 169,
+  "name": "Adimulam Koneti",
+  "party": "YSRCP"
+ },
+ {
+  "no": 170,
+  "name": "R. K. Roja",
+  "party": "YSRCP"
+ },
+ {
+  "no": 171,
+  "name": "K. Narayana Swamy",
+  "party": "YSRCP"
+ },
+ {
+  "no": 172,
+  "name": "Arani Srinivasulu",
+  "party": "YSRCP"
+ },
+ {
+  "no": 173,
+  "name": "M. S. Babu",
+  "party": "YSRCP"
+ },
+ {
+  "no": 174,
+  "name": "N. Venkate Gowda",
+  "party": "YSRCP"
+ },
+ {
+  "no": 175,
+  "name": "N. Chandrababu Naidu",
+  "party": "TDP"
+ }
+]

@@ -211,3 +211,16 @@
   font-size: 14px;
   line-height: 1.5;
 }
+
+.winner-only-note {
+  background: #171d26;
+  border-radius: 8px;
+  padding: 1.25rem;
+  font-size: 14px;
+  color: #c3c2b7;
+  line-height: 1.5;
+}
+
+.winner-only-note strong {
+  color: #ffffff;
+}
