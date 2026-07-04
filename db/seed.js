@@ -219,6 +219,169 @@ function seedElections(targetAcId, electionsData) {
 seedElections(badvelId, badvelElections);
 seedElections(kadapaId, kadapaElections);
 
+// ---- Remaining 5 YSR Kadapa ACs: real full candidate-level data ----
+// Sourced from each AC's individual Wikipedia page (same pattern as
+// Badvel/Kadapa) — completes YSR Kadapa as the first fully-detailed
+// district (all 7 ACs with real votes/turnout/margin, not just winner+party).
+const pulivendlaElections = [
+  { year: 2004, isBy: 0, electors: null, votesPolled: 110482, turnoutPct: 76.47,
+    candidates: [
+      { name: 'Y. S. Rajasekhara Reddy', party: 'INC', votes: 74432 },
+      { name: 'S. V. Sathish Kumar Reddy', party: 'TDP', votes: 33655 }
+    ]},
+  { year: 2009, isBy: 0, electors: null, votesPolled: 146644, turnoutPct: 78.65,
+    candidates: [
+      { name: 'Y. S. Rajasekhara Reddy', party: 'INC', votes: 103556 },
+      { name: 'S. V. Sathish Kumar Reddy', party: 'TDP', votes: 34875 },
+      { name: 'Veluru Chinna Gangireddy', party: 'IND', votes: 3629 }
+    ]},
+  { year: 2014, isBy: 0, electors: null, votesPolled: 181444, turnoutPct: 80.00,
+    candidates: [
+      { name: 'Y. S. Jagan Mohan Reddy', party: 'YSRCP', votes: 116000 },
+      { name: 'S. V. Sathish Kumar Reddy', party: 'TDP', votes: 39500 }
+    ]},
+  { year: 2019, isBy: 0, electors: null, votesPolled: 188127, turnoutPct: 80.63,
+    candidates: [
+      { name: 'Y. S. Jagan Mohan Reddy', party: 'YSRCP', votes: 132356 },
+      { name: 'S. V. Satish Kumar Reddy', party: 'TDP', votes: 42246 }
+    ]},
+  { year: 2024, isBy: 0, electors: 223407, votesPolled: 199492, turnoutPct: 89.30,
+    candidates: [
+      { name: 'Y. S. Jagan Mohan Reddy', party: 'YSRCP', votes: 116315 },
+      { name: 'M. Ravindranath Reddy', party: 'TDP', votes: 54628 },
+      { name: 'Mulamreddy Dhruva Kumar Reddy', party: 'INC', votes: 10083 },
+      { name: 'NOTA', party: 'NOTA', votes: 1764 }
+    ]}
+];
+
+const kamalapuramElections = [
+  { year: 2004, isBy: 0, electors: null, votesPolled: 106064, turnoutPct: 74.44,
+    candidates: [
+      { name: 'Gandluru Veera Siva Reddy', party: 'TDP', votes: 57542 },
+      { name: 'Putha Narasimha Reddy', party: 'INC', votes: 46254 }
+    ]},
+  { year: 2009, isBy: 0, electors: null, votesPolled: 135080, turnoutPct: 84.44,
+    candidates: [
+      { name: 'Gandluru Veera Siva Reddy', party: 'INC', votes: 65386 },
+      { name: 'Putta Narasimha Reddy', party: 'TDP', votes: 61223 },
+      { name: 'O Subba Reddy', party: 'IND', votes: 3366 }
+    ]},
+  { year: 2014, isBy: 0, electors: null, votesPolled: 157094, turnoutPct: null,
+    candidates: [
+      { name: 'Pochimareddy Ravindranath Reddy', party: 'YSRCP', votes: 78547 },
+      { name: 'Putha Narasimha Reddy', party: 'TDP', votes: 73202 }
+    ]},
+  { year: 2019, isBy: 0, electors: null, votesPolled: 159330, turnoutPct: 82.58,
+    candidates: [
+      { name: 'Pochimareddy Ravindranath Reddy', party: 'YSRCP', votes: 88482 },
+      { name: 'Putha Narasimha Reddy', party: 'TDP', votes: 61149 }
+    ]},
+  { year: 2024, isBy: 0, electors: 192941, votesPolled: 172196, turnoutPct: 89.26,
+    candidates: [
+      { name: 'Putha Krishna Chaitanya Reddy', party: 'TDP', votes: 95207 },
+      { name: 'Pochimareddy Ravindranath Reddy', party: 'YSRCP', votes: 69850 },
+      { name: 'Narreddy Kishore Reddy', party: 'IND', votes: 193 },
+      { name: 'NOTA', party: 'NOTA', votes: 2128 }
+    ]}
+];
+
+const jammalamaduguElections = [
+  { year: 2004, isBy: 0, electors: null, votesPolled: 116923, turnoutPct: 80.68,
+    candidates: [
+      { name: 'Ch. Adinarayana Reddy', party: 'INC', votes: 68463 },
+      { name: 'Ramasubbareddy Ponnapureddy', party: 'TDP', votes: 45770 }
+    ]},
+  { year: 2009, isBy: 0, electors: null, votesPolled: 174338, turnoutPct: 84.40,
+    candidates: [
+      { name: 'Ch. Adinarayana Reddy', party: 'INC', votes: 84416 },
+      { name: 'Ramasubbareddy Ponnapureddy', party: 'TDP', votes: 77032 },
+      { name: 'Vongala Nagendra Yadav', party: 'IND', votes: 4660 }
+    ]},
+  { year: 2014, isBy: 0, electors: null, votesPolled: 196416, turnoutPct: 86.35,
+    candidates: [
+      { name: 'Ch. Adinarayana Reddy', party: 'YSRCP', votes: 100794 },
+      { name: 'Ramasubbareddy Ponnapureddy', party: 'TDP', votes: 88627 }
+    ]},
+  { year: 2019, isBy: 0, electors: null, votesPolled: 202891, turnoutPct: 85.40,
+    candidates: [
+      { name: 'Dr Mule Sudheer Reddy', party: 'YSRCP', votes: 125005 },
+      { name: 'Ramasubbareddy Ponnapureddy', party: 'TDP', votes: 73064 }
+    ]},
+  { year: 2024, isBy: 0, electors: 237577, votesPolled: 213170, turnoutPct: 89.72,
+    candidates: [
+      { name: 'Ch. Adinarayana Reddy', party: 'BJP', votes: 109640 },
+      { name: 'Dr. Mule Sudheer Reddy', party: 'YSRCP', votes: 92449 },
+      { name: 'Brahmananda Reddy Pamula', party: 'INC', votes: 4222 },
+      { name: 'NOTA', party: 'NOTA', votes: 2392 }
+    ]}
+];
+
+const proddaturElections = [
+  { year: 2004, isBy: 0, electors: null, votesPolled: 137359, turnoutPct: 70.00,
+    candidates: [
+      { name: 'Nandyala Varada Rajulu Reddy', party: 'INC', votes: 54419 },
+      { name: 'Mallela Linga Reddy', party: 'IND', votes: 37390 },
+      { name: 'Kovvuru Balachandra Reddy', party: 'BJP', votes: 22118 }
+    ]},
+  { year: 2009, isBy: 0, electors: null, votesPolled: 157198, turnoutPct: 76.97,
+    candidates: [
+      { name: 'Mallela Linga Reddy', party: 'TDP', votes: 73023 },
+      { name: 'Nandyala Varada Rajulu Reddy', party: 'INC', votes: 56867 },
+      { name: 'Mallela Muralidhar', party: 'IND', votes: 22784 }
+    ]},
+  { year: 2014, isBy: 0, electors: null, votesPolled: 182601, turnoutPct: 78.65,
+    candidates: [
+      { name: 'Rachamallu Siva Prasad Reddy', party: 'YSRCP', votes: 93866 },
+      { name: 'Nandyala Varada Rajulu Reddy', party: 'TDP', votes: 80921 }
+    ]},
+  { year: 2019, isBy: 0, electors: null, votesPolled: 192293, turnoutPct: 78.65,
+    candidates: [
+      { name: 'Rachamallu Siva Prasad Reddy', party: 'YSRCP', votes: 107941 },
+      { name: 'Mallela Linga Reddy', party: 'TDP', votes: 64793 }
+    ]},
+  { year: 2024, isBy: 0, electors: 236730, votesPolled: 201284, turnoutPct: 85.02,
+    candidates: [
+      { name: 'Nandyala Varada Rajulu Reddy', party: 'TDP', votes: 106712 },
+      { name: 'Rachamallu Siva Prasad Reddy', party: 'YSRCP', votes: 83968 },
+      { name: 'Shaik Poola Mohammed Nazeer', party: 'INC', votes: 6016 },
+      { name: 'NOTA', party: 'NOTA', votes: 1740 }
+    ]}
+];
+
+const mydukurElections = [
+  { year: 2009, isBy: 0, electors: null, votesPolled: 142117, turnoutPct: 79.98,
+    candidates: [
+      { name: 'D. L. Ravindra Reddy', party: 'INC', votes: 62377 },
+      { name: 'Settipalli Raghurami Reddy', party: 'TDP', votes: 58016 },
+      { name: 'Iragamreddy Tirupala Reddy', party: 'IND', votes: 16552 }
+    ]},
+  { year: 2014, isBy: 0, electors: null, votesPolled: 164595, turnoutPct: 84.42,
+    candidates: [
+      { name: 'Settipalli Raghurami Reddy', party: 'YSRCP', votes: 85539 },
+      { name: 'Putta Sudhakar Yadav', party: 'TDP', votes: 74017 }
+    ]},
+  { year: 2019, isBy: 0, electors: null, votesPolled: 170816, turnoutPct: 82.14,
+    candidates: [
+      { name: 'Settipalli Raghurami Reddy', party: 'YSRCP', votes: 94849 },
+      { name: 'Putta Sudhakar Yadav', party: 'TDP', votes: 65505 }
+    ]},
+  { year: 2024, isBy: 0, electors: 207957, votesPolled: 180740, turnoutPct: 86.90,
+    candidates: [
+      { name: 'Putta Sudhakar Yadav', party: 'TDP', votes: 96181 },
+      { name: 'Settipalli Raghurami Reddy', party: 'YSRCP', votes: 75231 },
+      { name: 'Gundlakunta Sriramulu', party: 'INC', votes: 4579 },
+      { name: 'NOTA', party: 'NOTA', votes: 1564 }
+    ]}
+];
+
+seedElections(acIds[129], pulivendlaElections);
+seedElections(acIds[130], kamalapuramElections);
+seedElections(acIds[131], jammalamaduguElections);
+seedElections(acIds[132], proddaturElections);
+seedElections(acIds[133], mydukurElections);
+
+console.log('Completed YSR Kadapa as first fully-detailed district: all 7 ACs now have real multi-election candidate-level data.');
+
 run(
   `INSERT INTO demographics (admin_unit_id, census_year, population, rural_pct, sc_pct, st_pct) VALUES (?, 2011, 274179, 74.24, 21.73, 1.8)`,
   [badvelId]
@@ -251,8 +414,11 @@ function needsPartyForWinners(abbr) {
 
 function seedWinnerOnly(electionId, winnersData) {
   let inserted = 0;
+  // ACs with full real candidate-level data already seeded above — skip
+  // them here so winner-only rows don't overwrite/duplicate richer data.
+  const fullyDetailedAcNos = [124, 126, 129, 130, 131, 132, 133];
   for (const w of winnersData) {
-    if (w.no === 124 || w.no === 126) continue; // Badvel, Kadapa already have full real data
+    if (fullyDetailedAcNos.includes(w.no)) continue;
     const acId = acIds[w.no];
     if (!acId) continue;
     needsPartyForWinners(w.party);
