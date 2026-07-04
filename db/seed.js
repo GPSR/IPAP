@@ -382,6 +382,74 @@ seedElections(acIds[133], mydukurElections);
 
 console.log('Completed YSR Kadapa as first fully-detailed district: all 7 ACs now have real multi-election candidate-level data.');
 
+// ---- Annamayya district: started (Rajampet, Kodur done; 4 more to go) ----
+const rajampetElections = [
+  { year: 2004, isBy: 0, electors: null, votesPolled: 87747, turnoutPct: 70.26,
+    candidates: [
+      { name: 'Konduru Prabhavathamma', party: 'INC', votes: 54246 },
+      { name: 'Brahmaiah Pasupuleti', party: 'TDP', votes: 30579 }
+    ]},
+  { year: 2009, isBy: 0, electors: null, votesPolled: 138314, turnoutPct: 74.57,
+    candidates: [
+      { name: 'Akepati Amarnath Reddy', party: 'INC', votes: 60397 },
+      { name: 'Kasireddy Madan Mohan Reddy', party: 'TDP', votes: 48055 },
+      { name: 'Gunipati Ramaiah', party: 'IND', votes: 21499 }
+    ]},
+  { year: 2014, isBy: 0, electors: null, votesPolled: 165332, turnoutPct: 78.76,
+    candidates: [
+      { name: 'Meda Venkata Mallikarjuna Reddy', party: 'TDP', votes: 83884 },
+      { name: 'Akepati Amarnath Reddy', party: 'YSRCP', votes: 72267 }
+    ]},
+  { year: 2019, isBy: 0, electors: null, votesPolled: 164846, turnoutPct: 74.11,
+    candidates: [
+      { name: 'Meda Venkata Mallikarjuna Reddy', party: 'YSRCP', votes: 95266 },
+      { name: 'Bathyala Changal Rayudu', party: 'TDP', votes: 59994 },
+      { name: 'Poola Bhaskar', party: 'INC', votes: 3081 },
+      { name: 'Pathipati Kusuma Kumari', party: 'JSP', votes: 2376 },
+      { name: 'NOTA', party: 'NOTA', votes: 1448 }
+    ]},
+  { year: 2024, isBy: 0, electors: 222274, votesPolled: 184557, turnoutPct: 76.05,
+    candidates: [
+      { name: 'Akepati Amarnath Reddy', party: 'YSRCP', votes: 92609 },
+      { name: 'Sugavasi Subrahmanyam', party: 'TDP', votes: 85593 },
+      { name: 'Bhukya Viswanatha Naik', party: 'CPI', votes: 1009 },
+      { name: 'NOTA', party: 'NOTA', votes: 1617 }
+    ]}
+];
+
+const kodurElections = [
+  { year: 2004, isBy: 0, electors: null, votesPolled: 95503, turnoutPct: null,
+    candidates: [
+      { name: 'Dr. Gunti Venkateswara Prasad', party: 'INC', votes: 55135 },
+      { name: 'Jayamma Yerrathota', party: 'TDP', votes: 38713 }
+    ]},
+  { year: 2009, isBy: 0, electors: null, votesPolled: 117663, turnoutPct: null,
+    candidates: [
+      { name: 'Koramutla Srinivasulu', party: 'INC', votes: 51747 },
+      { name: 'Ajay Babu Nandavaram Benjimin', party: 'TDP', votes: 39359 }
+    ]},
+  { year: 2014, isBy: 0, electors: null, votesPolled: 137138, turnoutPct: null,
+    candidates: [
+      { name: 'Koramutla Sreenivasulu', party: 'YSRCP', votes: 66820 },
+      { name: 'Obili Subbaramaiah', party: 'TDP', votes: 64848 }
+    ]},
+  { year: 2019, isBy: 0, electors: null, votesPolled: 136770, turnoutPct: 75.86,
+    candidates: [
+      { name: 'Koramutla Sreenivasulu', party: 'YSRCP', votes: 78312 },
+      { name: 'Panthagani Narasimha Prasad', party: 'TDP', votes: 43433 }
+    ]},
+  { year: 2024, isBy: 0, electors: 204491, votesPolled: null, turnoutPct: null,
+    candidates: [
+      { name: 'Arava Sreedhar', party: 'JSP', votes: 78594 },
+      { name: 'Koramutla Sreenivasulu', party: 'YSRCP', votes: 67493 }
+    ]}
+];
+
+seedElections(acIds[125], rajampetElections);
+seedElections(acIds[127], kodurElections);
+
+console.log('Annamayya district: 2 of 6 ACs done (Rajampet, Kodur) — Rayachoti, Thamballapalle, Pileru, Madanapalle still winner-only.');
+
 run(
   `INSERT INTO demographics (admin_unit_id, census_year, population, rural_pct, sc_pct, st_pct) VALUES (?, 2011, 274179, 74.24, 21.73, 1.8)`,
   [badvelId]
@@ -416,7 +484,7 @@ function seedWinnerOnly(electionId, winnersData) {
   let inserted = 0;
   // ACs with full real candidate-level data already seeded above — skip
   // them here so winner-only rows don't overwrite/duplicate richer data.
-  const fullyDetailedAcNos = [124, 126, 129, 130, 131, 132, 133];
+  const fullyDetailedAcNos = [124, 126, 129, 130, 131, 132, 133, 125, 127];
   for (const w of winnersData) {
     if (fullyDetailedAcNos.includes(w.no)) continue;
     const acId = acIds[w.no];
